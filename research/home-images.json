@@ -1,0 +1,625 @@
+{
+  "https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview.png": {
+    "loading": "lazy",
+    "width": "500",
+    "height": "500",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview.png",
+    "class": "attachment-full size-full",
+    "alt": "",
+    "decoding": "async",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview.png 500w, https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview-300x300.png 300w, https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview-150x150.png 150w, https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview-100x100.png 100w, https://curtainhive.com/wp-content/uploads/2025/11/logo-removebg-preview-50x50.png 50w",
+    "sizes": "(max-width: 500px) 100vw, 500px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Free-Measurement.jpg": {
+    "fetchpriority": "high",
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Free-Measurement.jpg",
+    "class": "attachment-full size-full wp-image-21114",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Huge-Experience.jpg": {
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Huge-Experience.jpg",
+    "class": "attachment-full size-full wp-image-21115",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Meet-Execution.jpg": {
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Meet-Execution.jpg",
+    "class": "attachment-full size-full wp-image-21116",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Own-Production.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Own-Production.jpg",
+    "class": "attachment-full size-full wp-image-21117",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Quick-Installation.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Quick-Installation.jpg",
+    "class": "attachment-full size-full wp-image-21118",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Result-Strategies.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "600",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-2-Result-Strategies.jpg",
+    "class": "attachment-full size-full wp-image-21119",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "736",
+    "height": "736",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75.jpg",
+    "class": "attachment-full size-full wp-image-27138",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75.jpg 736w, https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75-50x50.jpg 50w",
+    "sizes": "(max-width: 736px) 100vw, 736px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-01.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-01.jpg",
+    "class": "attachment-full size-full wp-image-24811",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-02.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-02.jpg",
+    "class": "attachment-full size-full wp-image-24812",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-03.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-1-03.jpg",
+    "class": "attachment-full size-full wp-image-24813",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-01.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-01.jpg",
+    "class": "attachment-full size-full wp-image-24818",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-02.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-02.jpg",
+    "class": "attachment-full size-full wp-image-24819",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-03.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-2-03.jpg",
+    "class": "attachment-full size-full wp-image-24820",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-01.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-01.jpg",
+    "class": "attachment-full size-full wp-image-24822",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-02.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-02.jpg",
+    "class": "attachment-full size-full wp-image-24823",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-03.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-3-03.jpg",
+    "class": "attachment-full size-full wp-image-24827",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-03.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-03.jpg",
+    "class": "attachment-full size-full wp-image-24831",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-02.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-02.jpg",
+    "class": "attachment-full size-full wp-image-24830",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-01.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "940",
+    "height": "1020",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/home-3-image-carousel-4-01.jpg",
+    "class": "attachment-full size-full wp-image-24829",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/3a9fc1f716b5bffc5f9efdc2a5211bfc.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/3a9fc1f716b5bffc5f9efdc2a5211bfc.jpg",
+    "width": "700",
+    "height": "369"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/60051a9688523b482332756f0d1027ff.webp": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/60051a9688523b482332756f0d1027ff.webp",
+    "alt": "",
+    "width": "1200",
+    "height": "800"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/57a6d42a4985464af0c00e971fa2281f-300x150.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/57a6d42a4985464af0c00e971fa2281f-300x150.jpg",
+    "alt": "",
+    "width": "300",
+    "height": "150"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "1199",
+    "height": "799",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8.jpg",
+    "class": "attachment-full size-full wp-image-28595",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8.jpg 1199w, https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8-300x200.jpg 300w, https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8-1024x682.jpg 1024w, https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8-768x512.jpg 768w, https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8-1000x666.jpg 1000w",
+    "sizes": "(max-width: 1199px) 100vw, 1199px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/daa91d26912a06cc658cfc23d40b0fb1.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "735",
+    "height": "490",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/daa91d26912a06cc658cfc23d40b0fb1.jpg",
+    "class": "attachment-full size-full wp-image-28516",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2026/01/daa91d26912a06cc658cfc23d40b0fb1.jpg 735w, https://curtainhive.com/wp-content/uploads/2026/01/daa91d26912a06cc658cfc23d40b0fb1-300x200.jpg 300w",
+    "sizes": "(max-width: 735px) 100vw, 735px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/ce79da633820c86cfebd1059943683c3.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "500",
+    "height": "333",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/ce79da633820c86cfebd1059943683c3.jpg",
+    "class": "attachment-full size-full wp-image-28523",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2026/01/ce79da633820c86cfebd1059943683c3.jpg 500w, https://curtainhive.com/wp-content/uploads/2026/01/ce79da633820c86cfebd1059943683c3-300x200.jpg 300w",
+    "sizes": "(max-width: 500px) 100vw, 500px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "1080",
+    "height": "720",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22.jpg",
+    "class": "attachment-full size-full wp-image-28530",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22.jpg 1080w, https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22-300x200.jpg 300w, https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22-1024x683.jpg 1024w, https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22-768x512.jpg 768w, https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22-1000x667.jpg 1000w",
+    "sizes": "(max-width: 1080px) 100vw, 1080px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/01e75bf36b9a08232e966fb3e27b1835.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "735",
+    "height": "519",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/01e75bf36b9a08232e966fb3e27b1835.jpg",
+    "class": "attachment-full size-full wp-image-28561",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2026/01/01e75bf36b9a08232e966fb3e27b1835.jpg 735w, https://curtainhive.com/wp-content/uploads/2026/01/01e75bf36b9a08232e966fb3e27b1835-300x212.jpg 300w",
+    "sizes": "(max-width: 735px) 100vw, 735px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/7683ae04f2701b856497bc0bff0ac2ba.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "520",
+    "height": "350",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/7683ae04f2701b856497bc0bff0ac2ba.jpg",
+    "class": "attachment-full size-full wp-image-26077",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/7683ae04f2701b856497bc0bff0ac2ba.jpg 520w, https://curtainhive.com/wp-content/uploads/2025/11/7683ae04f2701b856497bc0bff0ac2ba-300x202.jpg 300w",
+    "sizes": "(max-width: 520px) 100vw, 520px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/9d1ba2aded0c0528dd34b1f4c63b4c54.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "735",
+    "height": "413",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/9d1ba2aded0c0528dd34b1f4c63b4c54.jpg",
+    "class": "attachment-full size-full wp-image-26070",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/9d1ba2aded0c0528dd34b1f4c63b4c54.jpg 735w, https://curtainhive.com/wp-content/uploads/2025/11/9d1ba2aded0c0528dd34b1f4c63b4c54-300x169.jpg 300w",
+    "sizes": "(max-width: 735px) 100vw, 735px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/yu.png": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "458",
+    "height": "365",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/yu.png",
+    "class": "attachment-full size-full wp-image-26097",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/yu.png 458w, https://curtainhive.com/wp-content/uploads/2025/11/yu-300x239.png 300w",
+    "sizes": "(max-width: 458px) 100vw, 458px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/fg.png": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "891",
+    "height": "465",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/fg.png",
+    "class": "attachment-full size-full wp-image-26114",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/fg.png 891w, https://curtainhive.com/wp-content/uploads/2025/11/fg-300x157.png 300w, https://curtainhive.com/wp-content/uploads/2025/11/fg-768x401.png 768w",
+    "sizes": "(max-width: 891px) 100vw, 891px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/yuf.png": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "382",
+    "height": "367",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/yuf.png",
+    "class": "attachment-full size-full wp-image-26106",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/yuf.png 382w, https://curtainhive.com/wp-content/uploads/2025/11/yuf-300x288.png 300w",
+    "sizes": "(max-width: 382px) 100vw, 382px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Faq-01.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "1000",
+    "height": "620",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Faq-01.jpg",
+    "class": "attachment-full size-full wp-image-16247",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/timeline-image-1a.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "1578",
+    "height": "976",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/timeline-image-1a.jpg",
+    "class": "attachment-full size-full wp-image-25662",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/timeline-image-1a.jpg 1578w, https://curtainhive.com/wp-content/uploads/2024/05/timeline-image-1a-1000x619.jpg 1000w",
+    "sizes": "(max-width: 1578px) 100vw, 1578px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-1.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-1.jpg",
+    "class": "attachment-full size-full wp-image-21159",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-2.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-2.jpg",
+    "class": "attachment-full size-full wp-image-21160",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-3.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-3.jpg",
+    "class": "attachment-full size-full wp-image-21161",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-4.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-4.jpg",
+    "class": "attachment-full size-full wp-image-21162",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-5.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-5.jpg",
+    "class": "attachment-full size-full wp-image-21163",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-6.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-6.jpg",
+    "class": "attachment-full size-full wp-image-21164",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-7.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "385",
+    "height": "300",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/Home-3-Section-7-Image-7.jpg",
+    "class": "attachment-full size-full wp-image-21165",
+    "alt": ""
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/p3a-1000x1000.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/p3a-1000x1000.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "1000",
+    "height": "1000"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/82a605e83f9bfdf35d826b1ce3f934c5.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/82a605e83f9bfdf35d826b1ce3f934c5.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "317",
+    "height": "240"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/153b93a5423c95fa326a35cd05793914.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/153b93a5423c95fa326a35cd05793914.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "736",
+    "height": "736"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/d6b07f616f88402c7ab393b3c2c010cb.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/d6b07f616f88402c7ab393b3c2c010cb.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "794",
+    "height": "778"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/b2c7b3177bd33f7c1a9a5d56e22589dc-1000x1000.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/b2c7b3177bd33f7c1a9a5d56e22589dc-1000x1000.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "1000",
+    "height": "1000"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/81e9f27957ddccc38d3cba9710938e9e-1000x1000.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/81e9f27957ddccc38d3cba9710938e9e-1000x1000.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "1000",
+    "height": "1000"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/5a116dddee8deed253c3cd6743ca0019.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/5a116dddee8deed253c3cd6743ca0019.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "736",
+    "height": "736"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/ea96361bf78e3bfdee153c93415784ae.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/ea96361bf78e3bfdee153c93415784ae.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "736",
+    "height": "736"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/00d12b9d608db0bf3ce1a90fa300f073-1000x1000.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/00d12b9d608db0bf3ce1a90fa300f073-1000x1000.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "1000",
+    "height": "1000"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/822866891f39fe83093b8a6bf1c60080.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/822866891f39fe83093b8a6bf1c60080.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "480",
+    "height": "428"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/1w.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/1w.jpg",
+    "alt": "Shop Primary Image",
+    "title": "Shop Primary Image",
+    "width": "340",
+    "height": "340"
+  },
+  "https://curtainhive.com/wp-content/uploads/2026/01/23.jpg": {
+    "decoding": "async",
+    "src": "https://curtainhive.com/wp-content/uploads/2026/01/23.jpg",
+    "alt": "Shop Secondary Image",
+    "title": "Shop Secondary Image",
+    "width": "640",
+    "height": "640"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/2bc2f9b0bfe5c4efffd3d13c5834c29f.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "736",
+    "height": "878",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/2bc2f9b0bfe5c4efffd3d13c5834c29f.jpg",
+    "class": "attachment-full size-full wp-image-26567",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/12/2bc2f9b0bfe5c4efffd3d13c5834c29f.jpg 736w, https://curtainhive.com/wp-content/uploads/2025/12/2bc2f9b0bfe5c4efffd3d13c5834c29f-251x300.jpg 251w",
+    "sizes": "(max-width: 736px) 100vw, 736px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/test1.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "735",
+    "height": "855",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/test1.jpg",
+    "class": "attachment-full size-full wp-image-26533",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/12/test1.jpg 735w, https://curtainhive.com/wp-content/uploads/2025/12/test1-258x300.jpg 258w",
+    "sizes": "(max-width: 735px) 100vw, 735px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/12/tesst2.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "736",
+    "height": "920",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/12/tesst2.jpg",
+    "class": "attachment-full size-full wp-image-26532",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/12/tesst2.jpg 736w, https://curtainhive.com/wp-content/uploads/2025/12/tesst2-240x300.jpg 240w",
+    "sizes": "(max-width: 736px) 100vw, 736px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/06/image-1a-1-scaled.png": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "1826",
+    "height": "2560",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/06/image-1a-1-scaled.png",
+    "class": "attachment-full size-full wp-image-24938",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/06/image-1a-1-scaled.png 1826w, https://curtainhive.com/wp-content/uploads/2024/06/image-1a-1-scaled-1000x1402.png 1000w",
+    "sizes": "(max-width: 1826px) 100vw, 1826px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "800",
+    "height": "800",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350.jpg",
+    "class": "attachment-full size-full wp-image-26101",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350.jpg 800w, https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350-768x768.jpg 768w, https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2025/11/bcf6c0588b81d041526248c521fdc350-50x50.jpg 50w",
+    "sizes": "(max-width: 800px) 100vw, 800px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026.png": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "400",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026.png",
+    "class": "attachment-full size-full wp-image-25954",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026.png 400w, https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026-300x300.png 300w, https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026-150x150.png 150w, https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026-100x100.png 100w, https://curtainhive.com/wp-content/uploads/2025/11/Solid-color-curtains-are-window-treatments-made\u2026-50x50.png 50w",
+    "sizes": "(max-width: 400px) 100vw, 400px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/p51.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "736",
+    "height": "736",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/p51.jpg",
+    "class": "attachment-full size-full wp-image-26519",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/p51.jpg 736w, https://curtainhive.com/wp-content/uploads/2024/05/p51-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2024/05/p51-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2024/05/p51-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2024/05/p51-50x50.jpg 50w",
+    "sizes": "(max-width: 736px) 100vw, 736px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/p5e.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "800",
+    "height": "800",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/p5e.jpg",
+    "class": "attachment-full size-full wp-image-26518",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/p5e.jpg 800w, https://curtainhive.com/wp-content/uploads/2024/05/p5e-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2024/05/p5e-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2024/05/p5e-768x768.jpg 768w, https://curtainhive.com/wp-content/uploads/2024/05/p5e-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2024/05/p5e-50x50.jpg 50w",
+    "sizes": "(max-width: 800px) 100vw, 800px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/03/p4r.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "800",
+    "height": "800",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/03/p4r.jpg",
+    "class": "attachment-full size-full wp-image-26514",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/03/p4r.jpg 800w, https://curtainhive.com/wp-content/uploads/2024/03/p4r-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2024/03/p4r-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2024/03/p4r-768x768.jpg 768w, https://curtainhive.com/wp-content/uploads/2024/03/p4r-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2024/03/p4r-50x50.jpg 50w",
+    "sizes": "(max-width: 800px) 100vw, 800px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/p3c.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "500",
+    "height": "500",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/p3c.jpg",
+    "class": "attachment-full size-full wp-image-26506",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/p3c.jpg 500w, https://curtainhive.com/wp-content/uploads/2024/05/p3c-300x300.jpg 300w, https://curtainhive.com/wp-content/uploads/2024/05/p3c-150x150.jpg 150w, https://curtainhive.com/wp-content/uploads/2024/05/p3c-100x100.jpg 100w, https://curtainhive.com/wp-content/uploads/2024/05/p3c-50x50.jpg 50w",
+    "sizes": "(max-width: 500px) 100vw, 500px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/instagram-05.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "400",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/instagram-05.jpg",
+    "class": "attachment-full size-full wp-image-15531",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/instagram-05.jpg 400w, https://curtainhive.com/wp-content/uploads/2024/05/instagram-05-100x100.jpg 100w",
+    "sizes": "(max-width: 400px) 100vw, 400px"
+  },
+  "https://curtainhive.com/wp-content/uploads/2024/05/instagram-06.jpg": {
+    "loading": "lazy",
+    "decoding": "async",
+    "width": "400",
+    "height": "400",
+    "src": "https://curtainhive.com/wp-content/uploads/2024/05/instagram-06.jpg",
+    "class": "attachment-full size-full wp-image-15532",
+    "alt": "",
+    "srcset": "https://curtainhive.com/wp-content/uploads/2024/05/instagram-06.jpg 400w, https://curtainhive.com/wp-content/uploads/2024/05/instagram-06-100x100.jpg 100w",
+    "sizes": "(max-width: 400px) 100vw, 400px"
+  }
+}

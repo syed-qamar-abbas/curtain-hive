@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+let source=readFileSync('src/main.tsx','utf8');
+source=source.replace("import './refinements.css';","import './refinements.css';\nimport legacyRoutes from './legacy-routes.json';\nfunction HomeEntry(){const [search]=useSearchParams();const id=search.get('page_id');const destination=id?legacyRoutes[id as keyof typeof legacyRoutes]:null;return destination?<Navigate to={destination} replace/>:<Home/>;}");
+source=source.replace('<Route path="/" element={<Home/>}/>','<Route path="/" element={<HomeEntry/>}/>');
+source=source.replace('<div className="comparison" style=',`<div className="comparison" onPointerDown={e=>{if((e.target as HTMLElement).tagName==='INPUT')return;e.currentTarget.setPointerCapture(e.pointerId);const r=e.currentTarget.getBoundingClientRect();setPosition(Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100)));}} onPointerMove={e=>{if(!e.currentTarget.hasPointerCapture(e.pointerId))return;const r=e.currentTarget.getBoundingClientRect();setPosition(Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100)));}} onPointerUp={e=>{if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);}} style=`);
+source=source.replace("createRoot(document.getElementById('root')!).render(<App/>);\n",'');
+source+='\ncreateRoot(document.getElementById(\'root\')!).render(<App/>);\n';
+writeFileSync('src/main.tsx',source);
+let css=readFileSync('src/refinements.css','utf8').replace(/font-size:(?:11|12)px/g,'font-size:13px');
+css+='\n.comparison{touch-action:pan-y}.comparison input{top:calc(50% - 22px);bottom:auto;height:44px}.whatsapp-float{position:static;margin:0 auto 25px}.footer{background:var(--sand)}\n';
+writeFileSync('src/refinements.css',css);
+const legacy=JSON.parse(readFileSync('src/legacy-routes.json','utf8'));writeFileSync('research/redirect-map.json',JSON.stringify({permalinks:{'/about/':'/about-us/','/services/':'/our-services/','/contact/':'/contact-us/','/blog/':'/news-blog/'},wordpressQueryRoutes:Object.fromEntries(Object.entries(legacy).map(([id,url])=>['/?page_id='+id,url])),note:'Client-side query migration is active in the preview. Configure corresponding HTTP 301 query rules on the production origin at domain migration. The old homepage incorrectly links one Furniture label to upholstery ID 27715; the separate fifth service points to 28289.'},null,2));
+console.log('Added observed legacy URL handling, keyboard/pointer comparison, mobile type and unobstructed content.');

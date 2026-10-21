@@ -1,0 +1,321 @@
+{
+  "source": "https://curtainhive.com/",
+  "retrievedDate": "2026-10-21",
+  "business": {
+    "name": "Curtain Hive",
+    "phone": "+923015374238",
+    "whatsapp": "https://wa.me/923015374238",
+    "address": "Chaudhry Bostan Khan Road, Phase 3, Gulrez Housing Scheme, Rawalpindi, Pakistan",
+    "hours": "Monday–Sunday, 9:00 AM–9:00 PM",
+    "serviceAreas": [
+      "Rawalpindi",
+      "Islamabad"
+    ],
+    "email": null,
+    "social": {
+      "facebook": "https://web.facebook.com/curtainhiveoffical/",
+      "instagram": "https://www.instagram.com/curtainhive/"
+    }
+  },
+  "about": {
+    "title": "Rawalpindi's Most Trusted Interior Specialists",
+    "copy": "Curtain Hive was founded on a simple idea: to bring high-quality, bespoke interior design to homes and offices in Rawalpindi and Islamabad. Unlike other furniture shops in Rawalpindi, we control the entire process. Our in-house team of designers, craftsmen, and installers ensures that every single detail, from the stitching on your custom curtains to the fit of your 3D wallpaper, is absolutely perfect. We are your local partners, dedicated to quality you can see and feel.",
+    "source": "https://curtainhive.com/",
+    "note": "Published brand claim; avoid unsupported superlative in new editorial copy."
+  },
+  "services": [
+    {
+      "name": "Custom Curtains",
+      "slug": "custom-curtains",
+      "description": "Tailored curtains for the perfect window fit.",
+      "image": "/images/curtains-service.jpg"
+    },
+    {
+      "name": "Motorized Blinds",
+      "slug": "motorized-blinds",
+      "description": "Smart blinds with smooth remote control.",
+      "image": "/images/blinds-service.jpg"
+    },
+    {
+      "name": "3D Wallpaper Installation",
+      "slug": "wallpaper-installation",
+      "description": "Add depth and style with 3D walls.",
+      "image": "/images/wallpaper-patterned.jpg"
+    },
+    {
+      "name": "Sofa Fabric & Upholstery",
+      "slug": "sofa-fabric-upholstery",
+      "description": "Refresh your sofa with quality fabric.",
+      "image": "/images/upholstery-service.jpg"
+    },
+    {
+      "name": "Custom Made Furniture",
+      "slug": "custom-furniture",
+      "description": "Designed and built to your style.",
+      "image": "/images/furniture-service.jpg"
+    }
+  ],
+  "process": [
+    {
+      "name": "Free In-Home Consultation",
+      "description": "Our expert will visit your Rawalpindi or Islamabad home, measure your windows, and provide fabric samples—all with no obligation."
+    },
+    {
+      "name": "Design And Crafting",
+      "description": "We help you choose the perfect fabric and style. Our local artisans then craft your custom curtains or blinds to your exact specifications."
+    },
+    {
+      "name": "Professional Installation",
+      "description": "Our clean, fast, and professional team will install your new window treatments, including any curtain rod holder or motorized blinds tracks, for a flawless finish."
+    }
+  ],
+  "products": [
+    {
+      "id": 28263,
+      "slug": "designer-3d-wallpaper",
+      "name": "Designer & 3D Wallpaper",
+      "url": "https://curtainhive.com/product/designer-3d-wallpaper/",
+      "currency": "PKR",
+      "price": 3700,
+      "regularPrice": 3700,
+      "sale": false,
+      "stockStatus": "In stock",
+      "categories": [
+        "3d-wallpapers",
+        "home-office-decor",
+        "interior-decor",
+        "modern-wall-designs"
+      ],
+      "tags": [
+        "3d-wallpaper",
+        "designer-wallpaper",
+        "modern-wallpaper",
+        "wall-decor"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2024/05/p3a-1000x1000.jpg",
+        "https://curtainhive.com/wp-content/uploads/2024/05/82a605e83f9bfdf35d826b1ce3f934c5.jpg"
+      ],
+      "images": [
+        "/images/wallpaper-designer.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    },
+    {
+      "id": 28261,
+      "slug": "vinyl-washable-wallpaper",
+      "name": "Vinyl & Washable Wallpaper",
+      "url": "https://curtainhive.com/product/vinyl-washable-wallpaper/",
+      "currency": "PKR",
+      "price": 8000,
+      "regularPrice": 8300,
+      "sale": true,
+      "stockStatus": "In stock",
+      "categories": [
+        "home-office-decor",
+        "interior-decor",
+        "premium-wall-coverings"
+      ],
+      "tags": [
+        "commercial-wallpaper",
+        "vinyl-wallpaper",
+        "washable-wallpaper"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2024/05/153b93a5423c95fa326a35cd05793914.jpg",
+        "https://curtainhive.com/wp-content/uploads/2024/05/d6b07f616f88402c7ab393b3c2c010cb.jpg"
+      ],
+      "images": [
+        "/images/wallpaper-vinyl.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    },
+    {
+      "id": 28260,
+      "slug": "patterned-wallpaper",
+      "name": "Patterned Wallpaper",
+      "url": "https://curtainhive.com/product/patterned-wallpaper/",
+      "currency": "PKR",
+      "price": 5500,
+      "regularPrice": 5500,
+      "sale": false,
+      "stockStatus": "In stock",
+      "categories": [
+        "home-office-decor",
+        "interior-decor",
+        "modern-wall-designs",
+        "premium-wall-coverings"
+      ],
+      "tags": [
+        "decorative-wallpaper",
+        "modern-wall-design",
+        "patterned-wallpaper"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2024/05/b2c7b3177bd33f7c1a9a5d56e22589dc-1000x1000.jpg",
+        "https://curtainhive.com/wp-content/uploads/2024/05/81e9f27957ddccc38d3cba9710938e9e-1000x1000.jpg"
+      ],
+      "images": [
+        "/images/wallpaper-patterned.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    },
+    {
+      "id": 28255,
+      "slug": "elegant-sheer-curtains",
+      "name": "Elegant Sheer Curtains",
+      "url": "https://curtainhive.com/product/elegant-sheer-curtains/",
+      "currency": "PKR",
+      "price": 3700,
+      "regularPrice": 4200,
+      "sale": true,
+      "stockStatus": "In stock",
+      "categories": [
+        "100-polyester",
+        "luxury-curtains",
+        "modern-curtains"
+      ],
+      "tags": [
+        "curatins"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2024/05/5a116dddee8deed253c3cd6743ca0019.jpg",
+        "https://curtainhive.com/wp-content/uploads/2024/05/ea96361bf78e3bfdee153c93415784ae.jpg"
+      ],
+      "images": [
+        "/images/curtains-sheer.jpg",
+        "/images/curtains-sheer-detail.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    },
+    {
+      "id": 28254,
+      "slug": "blackout-luxury-curtains",
+      "name": "Blackout Luxury Curtains",
+      "url": "https://curtainhive.com/product/blackout-luxury-curtains/",
+      "currency": "PKR",
+      "price": 3500,
+      "regularPrice": 3500,
+      "sale": false,
+      "stockStatus": "In stock",
+      "categories": [
+        "100-polyester",
+        "luxury-curtains",
+        "modern-curtains"
+      ],
+      "tags": [
+        "curatins",
+        "modern-curtains"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2024/05/00d12b9d608db0bf3ce1a90fa300f073-1000x1000.jpg",
+        "https://curtainhive.com/wp-content/uploads/2024/05/822866891f39fe83093b8a6bf1c60080.jpg"
+      ],
+      "images": [
+        "/images/curtains-blackout.jpg",
+        "/images/curtains-blackout-detail.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    },
+    {
+      "id": 28125,
+      "slug": "curtains-drapes",
+      "name": "Curtains & Drapes",
+      "url": "https://curtainhive.com/product/curtains-drapes/",
+      "currency": "PKR",
+      "price": 1500,
+      "regularPrice": 2000,
+      "sale": true,
+      "stockStatus": "In stock",
+      "categories": [
+        "100-polyester",
+        "luxury-curtains"
+      ],
+      "tags": [
+        "curtains"
+      ],
+      "sourceImages": [
+        "https://curtainhive.com/wp-content/uploads/2026/01/1w.jpg",
+        "https://curtainhive.com/wp-content/uploads/2026/01/23.jpg"
+      ],
+      "images": [
+        "/images/curtains-drapes.jpg",
+        "/images/curtains-drapes-detail.jpg"
+      ],
+      "description": null,
+      "attributes": [],
+      "unit": null,
+      "dataNote": "Name, displayed price and stock copied from homepage product markup. Product detail routes inaccessible; description, unit, dimensions, materials, fulfillment and tax details require owner confirmation. Do not claim ready-stock or a price per metre/roll."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The custom curtains Curtain Hive made for my new home are absolutely stunning. The quality is incredible, and the installation was so professional. Truly the best curtains in Rawalpindi!",
+      "name": "Fatima K.",
+      "location": "Bahria Town",
+      "service": "Custom Curtains"
+    },
+    {
+      "quote": "I needed office furniture Rawalpindi and they delivered. Their modern furniture selection was excellent, and the custom desk they built is perfect. Highly recommend.",
+      "name": "Ali R.",
+      "location": "Saddar",
+      "service": "Custom Furniture"
+    },
+    {
+      "quote": "I'm so happy with my 3D wallpaper! I visited their wallpaper shop in Rawalpindi and the team was so helpful. It's completely transformed my living room.",
+      "name": "S. Ahmed",
+      "location": "Islamabad",
+      "service": "3D Wallpaper"
+    }
+  ],
+  "testimonialNote": "Names, locations and text reproduced exactly as published on existing homepage. No star-rating or additional verification implied.",
+  "articles": [],
+  "articlesNote": "Original homepage explicitly states No Posts Found. Blog route unavailable. New editorial guidance must be labeled as studio guides, with no invented dates, authors or previous publication claims.",
+  "legal": {
+    "privacyPolicy": {
+      "url": "https://curtainhive.com/?page_id=3",
+      "content": null,
+      "status": "403 direct HTTP, inaccessible web tool"
+    },
+    "terms": {
+      "url": null,
+      "content": null,
+      "status": "Footer Terms & Condition points to #, no published destination."
+    }
+  },
+  "portfolio": {
+    "verifiedProjects": [],
+    "note": "Existing homepage media has no project names, client details, locations or proof it depicts delivered Curtain Hive projects. Present as design inspiration / existing collection imagery, not confirmed work."
+  },
+  "contentExcluded": [
+    "Door/window template filler",
+    "Latin placeholder copy",
+    "Unverified 200+ companies worldwide claim",
+    "Missing counter values",
+    "Unverified 20% newsletter offer",
+    "Unverified free delivery and easy returns promises",
+    "example@gmail.com placeholder",
+    "Template theme demo external links",
+    "Theme door FAQs and timeline"
+  ],
+  "integrationNotes": [
+    "Shop API unavailable (403). Six catalogue listings recovered from rendered homepage HTML.",
+    "No verified shipping, payment or backend order integration available. Preserve order flow as clearly identified request for confirmation; do not mark an order paid or confirmed.",
+    "No verified before/after pair or video found. Avoid false project transformation proof."
+  ]
+}

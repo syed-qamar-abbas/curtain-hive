@@ -1,0 +1,22 @@
+{
+  "permalinks": {
+    "/about/": "/about-us/",
+    "/services/": "/our-services/",
+    "/contact/": "/contact-us/",
+    "/blog/": "/news-blog/"
+  },
+  "wordpressQueryRoutes": {
+    "/?page_id=3": "/privacy-policy/",
+    "/?page_id=2132": "/our-services/",
+    "/?page_id=5209": "/contact-us/",
+    "/?page_id=6108": "/about-us/",
+    "/?page_id=6187": "/faq/",
+    "/?page_id=7640": "/shop/",
+    "/?page_id=8710": "/our-services/custom-curtains/",
+    "/?page_id=19465": "/our-services/motorized-blinds/",
+    "/?page_id=19470": "/our-services/wallpaper-installation/",
+    "/?page_id=27715": "/our-services/sofa-fabric-upholstery/",
+    "/?page_id=28289": "/our-services/custom-furniture/"
+  },
+  "note": "Client-side query migration is active in the preview. Configure corresponding HTTP 301 query rules on the production origin at domain migration. The old homepage incorrectly links one Furniture label to upholstery ID 27715; the separate fifth service points to 28289."
+}

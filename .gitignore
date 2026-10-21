@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.taste-skill/inspect/
+.taste-skill/before/
+test-results/
+*.tsbuildinfo
+*.zip
+*.log
