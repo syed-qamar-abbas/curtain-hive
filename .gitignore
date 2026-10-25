@@ -1,8 +1,20 @@
 node_modules/
 dist/
-.taste-skill/inspect/
-.taste-skill/before/
+.openai/
+.sites-runtime/
+.taste-skill/
 test-results/
 *.tsbuildinfo
 *.zip
 *.log
+.env
+.env.*
+!.env.example
+
+# Local audit captures and generated reports; verification scripts recreate these.
+research/qa/
+research/*-qa/
+research/nav-bubble/
+research/navbar-fixes/
+research/qa-audit-*/
+research/qa-fixes-*/

@@ -4,7 +4,7 @@ import { writeFileSync } from 'node:fs';
 
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const page = await browser.newPage();
-await page.addInitScript(() => sessionStorage.setItem('ch-intro', '1'));
+await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'premium-v3'));
 const checks = [];
 for (const width of [1440, 768, 390]) {
   await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });

@@ -5,13 +5,13 @@ React 19, TypeScript, Vite 7 and Tailwind CSS 4. Data-driven services, product p
 ## Run locally
 
 ```sh
-npm install
+npm ci
 npm run dev
 npm run build
 npm run preview
 ```
 
-On this Windows machine, the Sites npm shim resolves incorrectly. The verified fallback is `node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" run build`. No global configuration was changed.
+The development site runs at `http://127.0.0.1:5173/`. `npm run build` produces the static preview in `dist/`. Local hosting metadata, dependencies and generated QA captures are excluded from version control. Verification scripts recreate their evidence folders when run.
 
 ## Included
 
@@ -46,3 +46,21 @@ There was no verified project provenance or matching before/after image pair. Th
 The Taste skill lint and real-browser inspection were also run. See `.taste-skill/critique.md` and `DESIGN-REPORT.md` for the visual result and explicit brief-overrides. The original site's desktop capture hit a browser-check screen, so a reliable numerical before/after comparison is unavailable.
 
 Final result: production build/typecheck passed, all 59 routes fit at 1440/768/390px, all listed interaction flows passed, and no JavaScript errors were observed. The homepage visual inspector reports zero failures and three documented warnings. `scripts/capture-secondary.mjs` also checks complete image decoding and produces corrected secondary-page captures; see `research/qa/media-results.json`.
+
+## Local motion update
+
+The subsequent animation pass increases the curtain intro from 1.3 to 2.2 seconds and adds a shared motion layer for hover, scroll reveals, dropdowns, dialogs, accordions and form feedback. The update is hosted locally at http://127.0.0.1:5173/. Build/typecheck, the full existing interaction suite, and targeted motion/reduced-motion checks passed. The latest visual result is zero failures and four documented warnings; see `MOTION-REPORT.md` for files, behavior, evidence and remaining limits.
+
+## Premium redesign — 24 October 2026
+
+The latest local version uses Manrope, warm ivory and burgundy, a rebuilt photographic homepage, a short consultation form with optional guided planner, and a quick 1.1-second intro. This supersedes earlier visual and intro timing notes. See [REDESIGN-REPORT.md](REDESIGN-REPORT.md) for implementation, sources, QA and owner confirmation items. Run `node scripts/verify-premium.mjs` for the new enquiry flow, `node scripts/verify.mjs` for the route/commerce suite, and `node scripts/verify-motion.mjs` for motion/access checks. Local preview: http://127.0.0.1:5173/. No new deployment was made.
+
+## Rounded experience revamp — latest
+
+The follow-up adds an immersive mood-switching hero, rounded cards/actions, stronger photographic hierarchy, a prominent burgundy Window Studio, interactive process steps and richer motion. See [EXPERIENCE-PLAN.md](EXPERIENCE-PLAN.md) and [EXPERIENCE-REPORT.md](EXPERIENCE-REPORT.md). New interaction and layout checks: `node scripts/verify-experience.mjs`. All existing route/commerce/enquiry checks pass; the preview stays local on port 5173.
+
+The subsequent hero/navbar refinement uses a bright editorial split, photographic mood thumbnails and a floating navigation bar. See [HERO-NAV-REPORT.md](HERO-NAV-REPORT.md); `node scripts/verify-hero-nav.mjs` covers nine responsive widths plus search/menu navigation.
+
+## QA fixes — 25 October 2026
+
+The left floating consultation CTA is removed. All ten reported defects and both design recommendations have been implemented and retested: responsive filters, guided-step focus and draft retention, conditional email validation, integer quantities, focus-aware dropdowns, search history, accessible filter states, URL normalization and a shorter mobile homepage. Run `node scripts/verify-qa-fixes.mjs` for the acceptance scenarios and `node scripts/verify-small-layout.mjs` for all routes at 320px. See [QA-FIX-REPORT.md](QA-FIX-REPORT.md) for the verified fixes. Detailed screenshots and raw audit evidence are generated locally and excluded from this repository.

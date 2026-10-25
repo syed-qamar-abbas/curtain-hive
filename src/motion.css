@@ -1,0 +1,127 @@
+/* Shared motion tokens preserve the approved colour, type and layout system. */
+:root {
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+  --motion-travel: cubic-bezier(.76, 0, .24, 1);
+  --motion-micro: 180ms;
+  --motion-hover: 280ms;
+}
+
+.button {
+  transition: transform var(--motion-hover) var(--motion-ease), background-color 240ms ease,
+    border-color 240ms ease, color 240ms ease;
+}
+.button:hover { transform: translateY(-2px); }
+.button:active { transform: translateY(0) scale(.985); transition-duration: 140ms; }
+.button:disabled { transform: none; }
+.button svg, .text-link svg, .service-tile span svg, .service-links svg, .inspiration-grid span svg {
+  transition: transform var(--motion-hover) var(--motion-ease);
+}
+.text-link { text-decoration: none; }
+.text-link:hover { text-decoration: none; }
+.text-link { position: relative; transition: color 180ms ease; }
+.text-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px;
+  height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; /* taste-skill-ignore: Brief explicitly requests subtle separators and animated link underlines. */
+  transition: transform var(--motion-hover) var(--motion-ease); }
+.text-link:hover::after, .text-link:focus-visible::after { transform: scaleX(1); }
+.text-link:active svg { transform: translate(1px, 0); }
+.desktop-nav > a, .nav-drop > button { position: relative; }
+.desktop-nav > a::after, .nav-drop > button::after {
+  content: ''; position: absolute; bottom: 8px; left: 0; right: 0; height: 1px; /* taste-skill-ignore: Brief explicitly requests subtle separators and animated link underlines. */
+  background: currentColor; transform: scaleX(0); transform-origin: left;
+  transition: transform 240ms var(--motion-ease);
+}
+.desktop-nav > a:hover::after, .desktop-nav > a.active::after,
+.nav-drop > button[aria-expanded=true]::after, .desktop-nav > a:focus-visible::after { transform: scaleX(1); }
+.nav-drop > button svg { transition: transform 240ms var(--motion-ease); }
+.nav-drop > button[aria-expanded=true] svg { transform: rotate(180deg); }
+.dropdown {
+  opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(8px);
+  transition: opacity 180ms ease, transform 240ms var(--motion-ease), visibility 0s 240ms;
+}
+.nav-drop[data-open=true] .dropdown {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); transition-delay: 0s;
+}
+.dropdown a { transition: color 180ms ease, transform 240ms var(--motion-ease); }
+
+.accordion-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 220ms var(--motion-ease); }
+.accordion-panel > div { min-height: 0; overflow: hidden; }
+.accordion details[data-expanded=true] .accordion-panel { grid-template-rows: 1fr; transition-duration: 320ms; }
+.accordion details[open] summary svg { transform: none; }
+.accordion details[data-expanded=true] summary svg { transform: rotate(45deg); }
+.accordion summary svg { transition: transform 240ms var(--motion-ease); }
+.form-grid input, label > input, label > select, label > textarea, .search-field {
+  transition: border-color 200ms ease, background-color 200ms ease, outline-color 200ms ease;
+}
+.choices button, .wizard-choices button, .filter-tabs button, .quantity button, .save-button,
+.thumbnails button, .icon-button { transition: color 180ms ease, background-color 180ms ease,
+  border-color 180ms ease, transform 180ms var(--motion-ease); }
+.choices button:active, .wizard-choices button:active, .quantity button:active, .save-button:active { transform: scale(.98); }
+.thumbnails button[aria-pressed=true] { border-color: var(--olive); }
+.toast { transition: opacity 220ms ease, transform 280ms var(--motion-ease), visibility 0s 280ms; }
+.toast.show { transition-delay: 0s; }
+
+@media (hover: hover) and (pointer: fine) {
+  .product-card { transition: transform var(--motion-hover) var(--motion-ease); }
+  .product-card:hover { transform: translateY(-3px); }
+  .product-image { transition: box-shadow var(--motion-hover) ease; }
+  .product-card:hover .product-image { box-shadow: 0 8px 18px #2828230d; } /* taste-skill-ignore: Hover-only elevation requested in brief; no resting shadow. */
+  .product-image img, .gallery-open img { transition: transform 700ms var(--motion-ease); }
+  .product-card:hover .product-image img { transform: scale(1.035); }
+  .gallery-open:hover img { transform: scale(1.025); }
+  .service-tile img { transition: transform 600ms var(--motion-ease); }
+  .service-tile:hover img { transform: scale(.99); }
+  .service-tile:hover span svg, .service-links a:hover svg,
+  .inspiration-grid a:hover span svg { transform: translate(2px, -2px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-curtain > div:first-child { animation: curtain-left 1.05s var(--motion-travel) both; }
+  .intro-curtain > div:nth-child(2) { animation: curtain-right 1.05s var(--motion-travel) both; }
+  .intro-curtain > span { animation: curtain-logo .65s ease both; }
+  .hero-image { animation: room-settle 7s var(--motion-ease) both; }
+  .hero-content h1 { animation: hero-arrive 720ms var(--motion-ease) both; }
+  .hero-description { animation: hero-arrive 700ms 90ms var(--motion-ease) both; }
+  .hero-content .actions { animation: hero-arrive 650ms 180ms var(--motion-ease) both; }
+  .hero-content .kicker { animation: soft-arrive 500ms ease both; } /* taste-skill-ignore: Context labels use sentence case, or are hidden; no tiny uppercase labels. */
+  html[data-intro=opening] .hero-content h1 { animation-delay: 780ms; }
+  html[data-intro=opening] .hero-description { animation-delay: 870ms; }
+  html[data-intro=opening] .hero-content .actions { animation-delay: 960ms; }
+  .studio-question, .studio-result, .wizard-stage, .confirmation { animation: interface-arrive 320ms var(--motion-ease) both; }
+  .testimonials blockquote, .testimonials > p:not(.kicker) { animation: soft-arrive 320ms ease both; }
+  .form-error { animation: feedback-arrive 200ms ease both; }
+  .modal[open] { animation: modal-arrive 300ms var(--motion-ease) both; }
+  .modal[open]::backdrop { animation: backdrop-arrive 240ms ease both; }
+  .modal[data-closing=true] { animation: modal-leave 180ms ease both; }
+  .modal[data-closing=true]::backdrop { animation: backdrop-leave 180ms ease both; }
+  .mobile-drawer > a { animation: interface-arrive 300ms var(--motion-ease) both; }
+  .mobile-drawer > a:nth-of-type(2) { animation-delay: 30ms; }
+  .mobile-drawer > a:nth-of-type(3) { animation-delay: 60ms; }
+  .mobile-drawer > a:nth-of-type(n+4) { animation-delay: 90ms; }
+  .lightbox > img, .product-gallery > img { animation: photo-arrive 300ms ease both; }
+}
+
+@keyframes curtain-left { 0%, 20% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+@keyframes curtain-right { 0%, 20% { transform: translateX(0); } 100% { transform: translateX(100%); } }
+@keyframes curtain-logo { 0%, 32% { opacity: 1; visibility: visible; } 70%, 100% { opacity: 0; visibility: hidden; } }
+@keyframes room-settle { from { transform: scale(1.035); } to { transform: scale(1); } }
+@keyframes hero-arrive { from { opacity: .65; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes soft-arrive { from { opacity: .5; } to { opacity: 1; } }
+@keyframes interface-arrive { from { opacity: .6; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes feedback-arrive { from { opacity: .5; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@keyframes modal-arrive { from { opacity: 0; transform: translateY(14px) scale(.99); } to { opacity: 1; transform: none; } }
+@keyframes modal-leave { to { opacity: 0; transform: translateY(8px); } }
+@keyframes backdrop-arrive { from { background: #22241f00; } to { background: #22241fb3; } }
+@keyframes backdrop-leave { to { background: #22241f00; } }
+@keyframes photo-arrive { from { opacity: .65; } to { opacity: 1; } }
+
+@media (max-width: 768px) {
+  .hero-image { animation-duration: 5s; }
+  .product-card:hover, .service-tile:hover img, .inspiration-grid a:hover img { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .intro-curtain { display: none; }
+  .product-card:hover, .product-card:hover img, .gallery-open:hover img,
+  .service-tile:hover img, .inspiration-grid a:hover img, .button:hover { transform: none; }
+}
