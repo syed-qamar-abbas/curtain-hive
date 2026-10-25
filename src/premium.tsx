@@ -77,7 +77,7 @@ export function PremiumHome({ products, studio, testimonials, lightStudy }: { pr
       <div className="editorial-heading"><h2 id="category-title" data-reveal>Small changes.<br />A new feeling.</h2><div><p>Start at the window. Stay for the possibilities.</p><Link className="text-link" to="/our-services/">Explore all services <ArrowUpRight size={18} /></Link></div></div>
       <div className="category-wall">
         {services.map((service, i) => <Link className={`category-piece category-${i}`} key={service.slug} to={`/our-services/${service.slug}/`} data-reveal>
-          <div className="category-photo"><Photo src={service.image} alt={service.name} /></div>
+          <div className="category-photo"><Photo src={service.slug === 'custom-curtains' ? '/images/about-interior.jpg' : service.image} alt={service.slug === 'custom-curtains' ? 'Deep red curtains framing a bright window' : service.name} /></div>
           <div className="category-caption"><h3>{categoryCopy[i][0]}</h3><ArrowUpRight size={21} /></div>
           <p>{categoryCopy[i][1]}</p>
         </Link>)}
