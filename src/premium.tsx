@@ -1,20 +1,36 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { ArrowUpRight, ArrowRight, Check, MessageCircle, Phone, ArrowDown, MoveRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Check, MessageCircle, Phone, ArrowDown, MoveRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { business, media, services, wa } from './data';
+import { InsightsTeaser } from './Insights';
 
 function Photo({ src, alt, priority = false, className = '' }: { src: string; alt: string; priority?: boolean; className?: string }) {
   return <img src={src} alt={alt} width="1200" height="900" loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : 'auto'} decoding="async" className={className} />;
 }
 
-const roomMoods = [
-  { name: 'Soft daylight', image: media.hero, detail: 'Sheer layers. A softer morning.', colour: '#d9cbbc' },
-  { name: 'Quiet elegance', image: media.upholstery, detail: 'Gentle curves. Considered texture.', colour: '#b4aaa0' },
-  { name: 'A bolder mood', image: '/images/about-interior.jpg', detail: 'Rich drapery. A little more presence.', colour: '#8f2435' },
-];
+const heroServices = services.map((service, index) => ({
+  ...service,
+  image: index === 0 ? media.hero : service.image,
+  label: ['Curtains', 'Motorized blinds', 'Wallpaper', 'Upholstery', 'Furniture'][index],
+  detail: ['Curtains tailored to your light, privacy and style.', 'Simple control. A cleaner line at the window.', 'Pattern and texture, thoughtfully installed.', 'A fresh fabric. A familiar favourite.', 'Made to fit your room and the way you live.'][index],
+}));
 
 function RoomExperience() {
   const [active, setActive] = useState(0);
+  const options = useRef<HTMLDivElement>(null);
+  const service = heroServices[active];
+  useEffect(() => {
+    const track = options.current;
+    if (!track) return;
+    const update = () => {
+      const first = track.children[Math.min(Math.max(active - 1, 0), heroServices.length - 3)] as HTMLElement;
+      track.scrollTo({ left: first.offsetLeft - (track.children[0] as HTMLElement).offsetLeft, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(track);
+    return () => observer.disconnect();
+  }, [active]);
   return <section className="room-hero" aria-labelledby="home-title">
     <div className="room-hero-copy">
       <div className="hero-introduction"><span />Thoughtfully made. Personally yours.</div>
@@ -24,15 +40,21 @@ function RoomExperience() {
       <a className="hero-material-note" href="#finish-collection"><Photo src="/images/crafting.webp" alt="Curtain fabric textures" /><span><strong>Good rooms start with a feeling.</strong><span>Explore the fabrics. Find your finish.</span></span><ArrowUpRight size={20} /></a>
     </div>
     <div className="hero-room-canvas">
-      <div className="mood-images" aria-hidden="true">{roomMoods.map((mood, index) => <Photo key={mood.name} src={mood.image} alt="" priority={index === 0} className={`room-hero-photo ${index === active ? 'is-active' : ''}`} />)}</div>
+      <div className="mood-images" aria-hidden="true">{heroServices.map((item, index) => <Photo key={item.slug} src={item.image} alt="" priority={index === 0} className={`room-hero-photo ${index === active ? 'is-active' : ''}`} />)}</div>
       <div className="room-hero-scrim" />
       <div className="hero-photo-label"><span className="hero-photo-dot" />The art of feeling at home</div>
-      <Link className="hero-photo-explore" to="/portfolio/" aria-label="Explore room inspiration"><ArrowUpRight size={25} /></Link>
-    <div className="mood-picker" aria-label="Explore room moods">
-      <div className="mood-picker-heading"><span>Change the feeling</span><span>0{active + 1} / 03</span></div>
-      <div className="mood-options">{roomMoods.map((mood, index) => <button key={mood.name} type="button" aria-pressed={active === index} aria-label={`View ${mood.name.toLowerCase()}`} onClick={() => setActive(index)}><span className="mood-thumbnail"><Photo src={mood.image} alt="" />{active === index && <Check size={14} />}</span><span>{mood.name}</span></button>)}</div>
-      <p className="mood-caption" aria-live="polite" aria-atomic="true" key={active}>{roomMoods[active].detail}</p>
-      <span className="mood-disclosure">Room inspiration from our collection</span>
+      <Link className="hero-photo-explore" to={`/our-services/${service.slug}/`} aria-label={`Explore ${service.name.toLowerCase()}`}><ArrowUpRight size={25} /></Link>
+    <div className="mood-picker service-picker" role="group" aria-roledescription="carousel" aria-label="Explore our five services">
+      <div className="mood-picker-heading"><span>Find your finish</span><span>{String(active + 1).padStart(2, '0')} / 05</span></div>
+      <div className="mood-options" ref={options} onKeyDown={event => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const index = event.key === 'Home' ? 0 : event.key === 'End' ? 4 : Math.max(0, Math.min(4, active + (event.key === 'ArrowRight' ? 1 : -1)));
+        setActive(index);
+        (options.current?.children[index] as HTMLButtonElement)?.focus({ preventScroll: true });
+      }}>{heroServices.map((item, index) => <button key={item.slug} type="button" aria-pressed={active === index} aria-label={`Preview ${item.name.toLowerCase()}`} onClick={() => setActive(index)}><span className="mood-thumbnail"><Photo src={item.image} alt="" />{active === index && <Check size={14} />}</span><span>{item.label}</span></button>)}</div>
+      <p className="mood-caption" aria-live="polite" aria-atomic="true" key={active}>{service.detail}</p>
+      <div className="service-picker-bottom"><Link className="mood-disclosure service-preview-link" to={`/our-services/${service.slug}/`}>Explore {service.short.toLowerCase()} <ArrowUpRight size={15} /></Link><div className="service-picker-arrows"><button type="button" aria-label="Previous service" disabled={active === 0} onClick={() => setActive(value => value - 1)}><ChevronLeft size={18} /></button><button type="button" aria-label="Next service" disabled={active === heroServices.length - 1} onClick={() => setActive(value => value + 1)}><ChevronRight size={18} /></button></div></div>
     </div>
     </div>
   </section>;
@@ -108,6 +130,7 @@ export function PremiumHome({ products, studio, testimonials, lightStudy }: { pr
       <div className="gallery-end"><p className="small-note">Interior inspiration from our image collection.</p><Link className="text-link" to="/portfolio/">Explore the gallery <ArrowUpRight size={18} /></Link></div>
     </section>
     {testimonials}
+    <InsightsTeaser />
     <PremiumCTA />
   </div>;
 }

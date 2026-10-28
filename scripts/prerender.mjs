@@ -1,20 +1,64 @@
-import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
-import {join} from 'node:path';
-const data=JSON.parse(readFileSync('research/content.json','utf8').replace(/^\uFEFF/,''));
-const base=readFileSync('dist/index.html','utf8');
-const origin='https://curtainhive.com';
-const routes={'/':'Interiors, tailored to you','/about-us/':'About our furnishing studio','/our-services/':'Custom furnishing services','/shop/':'Shop curtains & wallpaper','/portfolio/':'Interior inspiration','/news-blog/':'The journal','/faq/':'Your questions answered','/contact-us/':'Visit & contact us','/consultation/':'Free home consultation','/cart/':'Your shopping bag','/checkout/':'Checkout preview','/wishlist/':'Your saved pieces','/privacy-policy/':'Privacy information','/terms-and-conditions/':'Customer terms'};
-for(const s of data.services)routes[`/our-services/${s.slug}/`]=s.name;
-for(const p of data.products){routes[`/product/${p.slug}/`]=p.name;for(const c of p.categories)routes[`/product-category/${c}/`]=c.replaceAll('-',' ');for(const t of p.tags)routes[`/product-tag/${t}/`]=t.replaceAll('-',' ');}
-routes['/product-category/curtains/']='Curtains';routes['/product-category/wallpaper/']='Wallpaper';
-for(const [slug,title]of [['choosing-curtains-for-your-living-room','Curtains that feel at home'],['light-filtering-or-blackout','A room in a different light'],['choosing-a-feature-wall','Give a wall a point of view']])routes[`/news-blog/${slug}/`]=title;
-for(const [slug,title]of [['soft-daylight','Soft daylight'],['rich-in-texture','Rich in texture'],['room-to-gather','Room to gather'],['a-quiet-pattern','A quiet pattern'],['clean-lines','Clean lines'],['softly-sculpted','Softly sculpted'],['classic-drapery','Classic drapery'],['botanical-walls','Botanical walls']])routes[`/portfolio/${slug}/`]=title;
-const escape=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
-for(const [path,title]of Object.entries(routes)){const dir=join('dist',path);mkdirSync(dir,{recursive:true});const schema={ '@context':'https://schema.org','@type':'LocalBusiness',name:'Curtain Hive',telephone:data.business.phone,url:origin,address:{'@type':'PostalAddress',streetAddress:'Chaudhry Bostan Khan Road, Phase 3, Gulrez Housing Scheme',addressLocality:'Rawalpindi',addressCountry:'PK'},areaServed:['Rawalpindi','Islamabad'],openingHours:'Mo-Su 09:00-21:00'};const html=base.replace(/<title>.*?<\/title>/,`<title>${escape(title)} | Curtain Hive</title>`).replace(/<meta name="description" content="[^"]*"\s*\/?\s*>/,`<meta name="description" content="${escape(title)}. Custom curtains, blinds, wallpaper, upholstery and furniture in Rawalpindi and Islamabad. Arrange a free home consultation with Curtain Hive."/>`).replace('</head>',`<link rel="canonical" href="${origin}${path}"/><meta property="og:title" content="${escape(title)} | Curtain Hive"/><meta property="og:description" content="Beautifully considered interiors, tailored to the way you live."/><meta property="og:image" content="https://curtain-hive-studio.toolpoint73.chatgpt.site/images/curtains-service.jpg"/><script type="application/ld+json">${JSON.stringify(schema)}</script></head>`);writeFileSync(join(dir,'index.html'),html);}
-const redirects={'/about/':'/about-us/','/services/':'/our-services/','/contact/':'/contact-us/','/blog/':'/news-blog/'};
-for(const [oldPath,target]of Object.entries(redirects)){const dir=join('dist',oldPath);mkdirSync(dir,{recursive:true});writeFileSync(join(dir,'index.html'),`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><title>Continue to Curtain Hive</title><link rel="canonical" href="${origin}${target}"></head><body><a href="${target}">Continue to Curtain Hive</a></body></html>`);}
-writeFileSync('dist/_redirects',Object.entries(redirects).map(([a,b])=>`${a} ${b} 301`).join('\n')+'\n/* /index.html 200\n');
-writeFileSync('dist/robots.txt','User-agent: *\nDisallow: /\n# Private design preview. Review indexing and canonical origin before public launch.\n');
-writeFileSync('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(routes).filter(x=>!['/cart/','/checkout/','/wishlist/'].includes(x)).map(x=>`<url><loc>${origin}${x}</loc></url>`).join('')}</urlset>`);
-writeFileSync('research/route-manifest.json',JSON.stringify({routes,redirects},null,2));
-console.log(`Prepared ${Object.keys(routes).length} routes, 4 redirects, sitemap and preview robots policy.`);
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { join, resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { build } from 'vite';
+import assert from 'node:assert/strict';
+
+// Compile the same React app for build-time HTML. This bundle is never deployed.
+await build({ build: { ssr: 'src/entry-server.tsx', outDir: '.sites-runtime/ssr', copyPublicDir: false, emptyOutDir: true } });
+const { render, pageMetadata, allPagePaths, siteOrigin, siteIndexable, insights, insightWordCount, insightEditorial } = await import(pathToFileURL(resolve('.sites-runtime/ssr/entry-server.js')).href);
+const base = readFileSync('dist/index.html', 'utf8');
+const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll("'", '&#x27;');
+const schemaJson = value => JSON.stringify(value).replaceAll('<', '\\u003c');
+
+function htmlFor(path) {
+  const meta = pageMetadata(path);
+  const metadata = `<link rel="canonical" href="${escape(meta.canonical)}"/>` +
+    Object.entries({ 'og:title': meta.title, 'og:description': meta.description, 'og:url': meta.canonical, 'og:image': meta.image, 'og:type': meta.type, 'og:site_name': 'Curtain Hive', 'og:locale': 'en_PK' }).map(([name, value]) => `<meta property="${name}" content="${escape(value)}"/>`).join('') +
+    Object.entries({ 'twitter:card': 'summary_large_image', 'twitter:title': meta.title, 'twitter:description': meta.description, 'twitter:image': meta.image }).map(([name, value]) => `<meta name="${name}" content="${escape(value)}"/>`).join('') +
+    `<script id="page-schema" type="application/ld+json">${schemaJson(meta.structuredData)}</script>`;
+  return base.replace(/<title>.*?<\/title>/, `<title>${escape(meta.title)}</title>`)
+    .replace(/<meta name="description" content="[^"]*"\s*\/?\s*>/, `<meta name="description" content="${escape(meta.description)}"/>`)
+    .replace(/<meta name="robots" content="[^"]*"\s*\/?\s*>/, `<meta name="robots" content="${meta.robots}"/>`)
+    .replace('</head>', `${metadata}</head>`)
+    .replace('<div id="root"></div>', () => `<div id="root" data-rendered-path="${escape(path)}">${render(path)}</div>`);
+}
+
+const routes = {};
+for (const path of allPagePaths) {
+  const dir = join('dist', path);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), htmlFor(path));
+  routes[path] = pageMetadata(path).title.replace(/ \| Curtain Hive$/, '');
+}
+writeFileSync('dist/404.html', htmlFor('/not-found/'));
+const redirects = { '/about/': '/about-us/', '/services/': '/our-services/', '/contact/': '/contact-us/', '/blog/': '/news-blog/' };
+for (const [path, target] of Object.entries(redirects)) {
+  const dir = join('dist', path);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=${target}"><title>Continue to Curtain Hive</title><link rel="canonical" href="${siteOrigin}${target}"></head><body><a href="${target}">Continue to Curtain Hive</a></body></html>`);
+}
+writeFileSync('dist/_redirects', Object.entries(redirects).map(([path, target]) => `${path} ${target} 301`).join('\n') + '\n' + allPagePaths.filter(path => path !== '/').map(path => `${path.slice(0, -1)} ${path} 301`).join('\n') + '\n/* /404.html 404\n');
+const indexablePaths = allPagePaths.filter(path => pageMetadata(path).indexable);
+writeFileSync('dist/robots.txt', `User-agent: *\nAllow: /\n${siteIndexable ? `Sitemap: ${siteOrigin}/sitemap.xml\n` : '# Client preview: pages use noindex,follow; allow crawling so that directive can be read.\n'}`);
+writeFileSync('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${indexablePaths.map(path => {
+  const article = insights.find(item => `/insights/${item.slug}/` === path);
+  return `<url><loc>${escape(siteOrigin + path)}</loc>${article ? `<lastmod>${insightEditorial(article).dateModified}</lastmod>` : ''}</url>`;
+}).join('')}</urlset>`);
+writeFileSync('research/route-manifest.json', JSON.stringify({ routes, redirects }, null, 2));
+
+assert.equal(insights.length, 5, 'The brief requires five guides.');
+assert.equal(new Set(insights.map(article => article.slug)).size, insights.length);
+for (const article of insights) {
+  const html = readFileSync(join('dist', `/insights/${article.slug}/`, 'index.html'), 'utf8');
+  assert(insightWordCount(article) > 900, `${article.slug}: incomplete guide`);
+  assert(html.includes(escape(article.sections.at(-1).paragraphs.at(-1))), `${article.slug}: missing static body`);
+  assert(html.includes('BlogPosting') && html.includes('BreadcrumbList'));
+  assert(existsSync(join('public', article.image)));
+  assert.equal(new Set(article.sections.map(section => section.id)).size, article.sections.length);
+  assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, `${article.slug}: one H1 required`);
+  for (const source of article.sources) assert(new URL(source.url).protocol === 'https:');
+}
+mkdirSync('.sites-runtime/insights-qa', { recursive: true });
+writeFileSync('.sites-runtime/insights-qa/content-manifest.json', JSON.stringify({ origin: siteOrigin, indexable: siteIndexable, routes: allPagePaths.length, sitemapUrls: indexablePaths.length, articles: insights.map(article => ({ title: article.title, slug: article.slug, words: insightWordCount(article), ...insightEditorial(article) })) }, null, 2));
+console.log(`Rendered ${allPagePaths.length} complete HTML routes, ${insights.length} full guides, 4 redirects and 404. Indexing: ${siteIndexable ? 'production enabled' : 'client preview disabled'}.`);

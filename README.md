@@ -1,6 +1,14 @@
 # Curtain Hive — complete website preview
 
-React 19, TypeScript, Vite 7 and Tailwind CSS 4. Data-driven services, product pages and editorial templates. The source lives in this folder; the static production site is generated into `dist/`.
+React 19, TypeScript, Vite 7 and Tailwind CSS 4. Data-driven services, product pages and editorial templates. The source lives in this folder; the static production site is generated into `dist/`. Use Node.js 22 LTS or a compatible newer release.
+
+## Services and Insights release — October 2026
+
+The hero now has five service previews with three visible thumbnails, manual navigation and service-specific destinations. `/insights/` contains five complete, source-referenced furnishing guides with comparisons, interactive checklists, FAQs and related reads. Navigation, homepage and service pages link to the new guides.
+
+The build now renders **65 complete HTML routes**, including full article text readable without JavaScript. Canonicals, social metadata and structured data share one route-aware source. The default client-preview build uses `noindex,follow`; production-domain/indexing configuration is documented in `.env.example` and [INSIGHTS-EDITORIAL.md](INSIGHTS-EDITORIAL.md). No search ranking, AI citation or analytics result is implied.
+
+See [INSIGHTS-PLAN.md](INSIGHTS-PLAN.md) for the implementation plan, [INSIGHTS-REPORT.md](INSIGHTS-REPORT.md) for verification and delivery status, and [INSIGHTS-EDITORIAL.md](INSIGHTS-EDITORIAL.md) for maintaining the articles. Earlier reports below describe their dated releases.
 
 ## Run locally
 
@@ -21,7 +29,7 @@ The development site runs at `http://127.0.0.1:5173/`. `npm run build` produces 
 - Native accessible modal dialogs, keyboard lightbox, reduced-motion support, one-session curtain intro, on-scroll entrances, and keyboard/pointer light comparison.
 - Contact and checkout prepare real WhatsApp links. They do not silently send messages, take payments, create orders or confirm appointments.
 - Room photo selection previews the file locally. It is not uploaded; the visitor is prompted to attach it separately in WhatsApp.
-- Static output for 59 canonical routes, metadata, canonical tags, LocalBusiness schema, sitemap, private-preview robots policy and legacy route mappings.
+- Complete static HTML for 65 routes, route-specific metadata and canonical tags, LocalBusiness/BlogPosting/BreadcrumbList schema, environment-controlled sitemap and legacy route mappings.
 
 ## Content integrity
 
@@ -41,7 +49,9 @@ There was no verified project provenance or matching before/after image pair. Th
 
 ## Verification
 
-`node scripts/verify.mjs` tests all 59 routes at desktop, tablet and mobile widths, catalogue interactions, wishlist, cart persistence, checkout validation, all consultation steps, local photo preview, FAQ search, gallery keyboard interactions, contact handoff, mobile navigation and reduced motion. It does not send messages or place orders.
+`node scripts/verify.mjs` tests all routes in the generated manifest at desktop, tablet and mobile widths, catalogue interactions, wishlist, cart persistence, checkout validation, all consultation steps, local photo preview, FAQ search, gallery keyboard interactions, contact handoff, mobile navigation and reduced motion. It expects the development server at port 5173. It does not send messages or place orders.
+
+After building, run `npm run preview` in a separate terminal, then `node scripts/verify-insights.mjs` for the service slider and article interactions (port 4173 by default). Run `node scripts/verify-insights-seo.mjs` to validate generated links, schema, canonicals and the separate production-domain configuration. Browser checks use an installed Google Chrome through the existing Playwright dependency.
 
 The Taste skill lint and real-browser inspection were also run. See `.taste-skill/critique.md` and `DESIGN-REPORT.md` for the visual result and explicit brief-overrides. The original site's desktop capture hit a browser-check screen, so a reliable numerical before/after comparison is unavailable.
 

@@ -74,10 +74,11 @@ export function MotionEffects() {
 }
 
 export function Intro() {
-  const [show, setShow] = useState(() => {
-    try { return sessionStorage.getItem('ch-intro') !== INTRO_VERSION && !reducedMotion(); }
-    catch { return false; }
-  });
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    try { setShow(sessionStorage.getItem('ch-intro') !== INTRO_VERSION && !reducedMotion()); }
+    catch { /* Storage is optional. */ }
+  }, []);
   useEffect(() => {
     if (!show) return;
     try { sessionStorage.setItem('ch-intro', INTRO_VERSION); } catch { /* Storage is optional. */ }
