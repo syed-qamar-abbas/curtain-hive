@@ -1,0 +1,34 @@
+.contact-whatsapp-layout { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: stretch; padding-top: 64px; }
+.contact-whatsapp-card { background: var(--accent); color: #fff; border-radius: 28px; padding: clamp(32px, 3.4vw, 50px); display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; }
+.contact-whatsapp-card h2 { font-size: clamp(35px, 3.4vw, 52px); line-height: 1.12; letter-spacing: -.05em; max-width: 12ch; }
+.contact-whatsapp-card > p { font-size: 17px; line-height: 1.8; max-width: 41ch; margin-top: 25px; }
+.contact-whatsapp-card .contact-whatsapp-button { margin-top: 30px; background: #fffefb; color: #8f2435; min-height: 58px; }
+.contact-whatsapp-card .contact-whatsapp-button:hover { background: #eee8df; color: #742032; }
+.contact-whatsapp-card .contact-whatsapp-number { font-size: 14px; margin-top: 18px; }
+.contact-whatsapp-card .contact-chat-note { font-size: 14px; margin-top: 40px; color: #fff; }
+.contact-showroom { border-radius: 28px; background: #eeebe5; overflow: hidden; }
+.contact-showroom > img { width: 100%; height: 300px; object-fit: cover; }
+.contact-showroom-copy { padding: 32px 36px 36px; }
+.contact-showroom-copy h2 { font-size: 31px; line-height: 1.15; letter-spacing: -.04em; }
+.contact-showroom-copy > p { margin-top: 18px; max-width: 40ch; font-size: 16px; }
+.contact-showroom-copy dl { display: grid; gap: 20px; margin: 25px 0 0; }
+.contact-showroom-copy dt { font-size: 13px; color: #68615a; margin-bottom: 4px; }
+.contact-showroom-copy dd { margin: 0; font-size: 15px; line-height: 1.6; }
+@media (max-width: 1000px) {
+  .contact-whatsapp-layout { gap: 22px; }
+  .contact-whatsapp-card { padding: 32px; }
+  .contact-whatsapp-card h2 { font-size: 38px; }
+  .contact-whatsapp-card > p { font-size: 16px; }
+  .contact-showroom-copy { padding: 28px; }
+  .contact-showroom > img { height: 270px; }
+}
+@media (max-width: 700px) {
+  .contact-whatsapp-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; }
+  .contact-whatsapp-card { padding: 30px 26px 32px; border-radius: 24px; }
+  .contact-whatsapp-card h2 { font-size: 38px; max-width: 11ch; }
+  .contact-whatsapp-card > p { margin-top: 20px; }
+  .contact-whatsapp-card .contact-chat-note { margin-top: 28px; }
+  .contact-showroom { border-radius: 24px; }
+  .contact-showroom > img { height: 240px; }
+  .contact-showroom-copy { padding: 28px 26px 30px; }
+}

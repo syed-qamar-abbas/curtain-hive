@@ -48,19 +48,10 @@ pass('QA-002','All category controls fit at 320/360/390px with no horizontal ove
 pass('DES-001','Product titles fit within two lines at all three small-phone widths.');
 
 await go('/contact-us/');
-await page.getByLabel('Your name',{exact:true}).fill('QA Fix Test');
-await page.getByLabel('Phone / WhatsApp',{exact:true}).fill('03001234567');
-await page.getByLabel('Preferred contact method').selectOption('Email');
-const email=page.getByLabel('Email',{exact:true});await expect(email).toHaveAttribute('required','');
-await page.getByLabel('Your message').fill('QA only; do not send.');
-await page.getByRole('button',{name:'Prepare my message',exact:true}).click();
-await expect(page.locator('.confirmation')).toHaveCount(0);
-await email.fill('invalid');await page.getByRole('button',{name:'Prepare my message',exact:true}).click();
-await expect(page.locator('.confirmation')).toHaveCount(0);
-await email.fill('qa@example.com');await page.getByRole('button',{name:'Prepare my message',exact:true}).click();
-await expect(page.locator('.confirmation')).toHaveCount(1);
-assert(decodeURIComponent(await page.getByRole('link',{name:'Continue on WhatsApp'}).getAttribute('href')).includes('Email: qa@example.com'));
-pass('QA-004','Email preference requires a valid email and includes it in the prepared message.');
+await expect(page.locator('main form, main input, main select, main textarea')).toHaveCount(0);
+const contactChat=page.locator('main').getByRole('link',{name:'Chat on WhatsApp',exact:true});
+await expect(contactChat).toHaveAttribute('href',/^https:\/\/wa\.me\/923015374238\?text=/);
+pass('QA-004','Contact form replaced with one direct WhatsApp CTA and showroom information.');
 
 await go('/product/elegant-sheer-curtains/');
 for(const value of ['1.5','0','100','']) {
