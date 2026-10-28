@@ -9,6 +9,8 @@ import './premium.css';
 import './experience.css';
 import './hero-navbar.css';
 import './insights.css';
+import './gallery.css';
+import {gallery, galleryCategories, galleryService, type GalleryItem} from './gallery';
 import { InsightsIndex, InsightArticle, ServiceInsightLink } from './Insights';
 import { applyPageMetadata } from './seo';
 import { PremiumHome, PremiumCTA, PremiumProcess, QuickConsultation } from './premium';
@@ -21,9 +23,61 @@ import legacyRoutes from './legacy-routes.json';
 function HomeEntry(){const [search]=useSearchParams();const id=search.get('page_id');const destination=id?legacyRoutes[id as keyof typeof legacyRoutes]:null;return destination?<Navigate to={destination} replace/>:<Home/>;}
 
 function FAQ(){const [query,setQuery]=useState('');const [cat,setCat]=useState('All');const list=faqs.filter(x=>(cat==='All'||x.category===cat)&&`${x.q} ${x.a}`.toLowerCase().includes(query.toLowerCase()));return <><PageHero label="A little guidance" title="Good questions. Clear answers." description="From your first idea to the final fitting, here’s a place to start."/><section className="section narrow faq-page"><label className="search-field"><Search size={19}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search your question…" aria-label="Search frequently asked questions"/></label><div className="filter-tabs wrap">{['All',...new Set(faqs.map(x=>x.category))].map(c=><button key={c} type="button" aria-pressed={c===cat} onClick={()=>setCat(c)} className={c===cat?'active':''}>{c}</button>)}</div><p className="filter-results" role="status" aria-live="polite" aria-atomic="true">{list.length} {list.length===1?'answer':'answers'}</p>{list.length?<Accordion items={list}/>:<p className="empty">No matching questions. Try another search, or speak to us on WhatsApp.</p>}<div className="center section-end"><h2>Still wondering?</h2><p>We’re happy to talk about your particular space.</p><a className="button" href={wa('Hello Curtain Hive, I have a question about my project.')}>Ask the team <MessageCircle size={17}/></a></div></section></>}
-const gallery=[{slug:'soft-daylight',title:'Soft daylight',category:'Curtains',image:media.detail},{slug:'rich-in-texture',title:'Rich in texture',category:'Furniture',image:'/images/gallery-texture.jpg'},{slug:'room-to-gather',title:'Room to gather',category:'Furniture',image:'/images/gallery-room.jpg'},{slug:'a-quiet-pattern',title:'A quiet pattern',category:'Wallpaper',image:media.wallpaper},{slug:'clean-lines',title:'Clean lines',category:'Blinds',image:media.blinds},{slug:'softly-sculpted',title:'Softly sculpted',category:'Upholstery',image:media.upholstery},{slug:'classic-drapery',title:'Classic drapery',category:'Curtains',image:'/images/curtains-blackout-detail.jpg'},{slug:'botanical-walls',title:'Botanical walls',category:'Wallpaper',image:'/images/wallpaper-vinyl.jpg'}];
-function Portfolio(){const [cat,setCat]=useState('All');const [active,setActive]=useState<number|null>(null);const list=gallery.filter(p=>cat==='All'||p.category===cat);useEffect(()=>{if(active===null)return;const listener=(e:KeyboardEvent)=>{if(e.key==='ArrowRight')setActive(v=>(v!+1)%list.length);if(e.key==='ArrowLeft')setActive(v=>(v!+list.length-1)%list.length);};window.addEventListener('keydown',listener);return()=>window.removeEventListener('keydown',listener);},[active,list.length]);return <><PageHero label="The inspiration gallery" title="Rooms to imagine yourself in." description="Explore curtain layers, material palettes and room ideas for your own space."/><section className="section portfolio"><div className="filter-tabs center wrap">{['All','Curtains','Blinds','Wallpaper','Upholstery','Furniture'].map(c=><button key={c} type="button" aria-pressed={cat===c} className={cat===c?'active':''} onClick={()=>setCat(c)}>{c}</button>)}</div><p className="filter-results" role="status" aria-live="polite" aria-atomic="true">{list.length} room {list.length===1?'idea':'ideas'}</p><div className="gallery-grid">{list.map((p,i)=><article key={p.slug} data-reveal><button className="gallery-open" onClick={()=>setActive(i)} aria-label={`Open ${p.title} image`}><Pic src={p.image} alt={p.title}/><span>View room <Plus size={19}/></span></button><Link to={`/portfolio/${p.slug}/`}><h2>{p.title}</h2><span>{p.category}<ArrowUpRight size={16}/></span></Link></article>)}</div><p className="small-note center">Design inspiration from the existing image collection. These images are not presented as verified client installations.</p></section>{active!==null&&<Modal title={list[active].title} onClose={()=>setActive(null)} wide><div className="lightbox"><Pic key={list[active].image} src={list[active].image} alt={list[active].title}/><div><button className="icon-button" aria-label="Previous image" onClick={()=>setActive((active+list.length-1)%list.length)}><ChevronLeft/></button><span>{list[active].title} · {active+1} / {list.length}</span><button className="icon-button" aria-label="Next image" onClick={()=>setActive((active+1)%list.length)}><ChevronRight/></button></div><Button to={`/consultation/?service=${services.find(s=>s.short===list[active].category)?.slug||''}`}>Inspired? Let’s talk</Button></div></Modal>}<CTA/></>}
-function PortfolioDetail(){const {slug}=useParams();const p=gallery.find(p=>p.slug===slug);if(!p)return <NotFound/>;return <><PageHero label={`${p.category} inspiration`} title={p.title} description="A starting point for your own space, from Curtain Hive’s existing image collection."/><section className="section portfolio-detail"><Pic src={p.image} alt={p.title} priority/><div><h2>Make it your own.</h2><p>Bring the elements you like from this image into a conversation with the team. We can discuss available materials, proportions and finishes for your room.</p><p className="small-note">Inspiration imagery, not a verified customer project. No location, installation date or client details are claimed.</p><Button to={`/consultation/?service=${services.find(s=>s.short===p.category)?.slug||''}`}>Discuss a similar direction</Button></div></section></>}
+function GalleryPhoto({item, full = false}: {item: GalleryItem; full?: boolean}) {
+  return <img src={full ? item.image : item.thumbnail || item.image} srcSet={!full && item.thumbnail ? `${item.thumbnail} 800w, ${item.image} ${item.width}w` : undefined} sizes={!full ? '(max-width: 600px) calc(100vw - 44px), (max-width: 1000px) 45vw, 43vw' : undefined} alt={item.alt} width={item.width || 1200} height={item.height || 900} loading={full ? 'eager' : 'lazy'} decoding="async" />;
+}
+function GalleryCredit({item}: {item: GalleryItem}) {
+  return <p className="gallery-credit">{item.source ? <>Photo by <a href={item.source} target="_blank" rel="noreferrer">{item.creator} / Pexels <ArrowUpRight size={12} /></a> · <a href={item.licenseUrl} target="_blank" rel="noreferrer">{item.license}</a></> : <>From the <a href="https://curtainhive.com/" target="_blank" rel="noreferrer">Curtain Hive image collection</a>.</>}</p>;
+}
+function Portfolio() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requested = searchParams.get('category');
+  const cat = galleryCategories.find(category => category.toLowerCase() === requested?.toLowerCase()) || 'All';
+  const [visible, setVisible] = useState(12);
+  const [active, setActive] = useState<number|null>(null);
+  const list = gallery.filter(item => cat === 'All' || item.category === cat);
+  useEffect(() => {setVisible(12); setActive(null);}, [cat]);
+  useEffect(() => {
+    if (active === null) return;
+    const listener = (event: KeyboardEvent) => {
+      if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return;
+      event.preventDefault();
+      setActive(value => (value! + (event.key === 'ArrowRight' ? 1 : list.length - 1)) % list.length);
+    };
+    window.addEventListener('keydown', listener);
+    return () => window.removeEventListener('keydown', listener);
+  }, [active, list.length]);
+  const selected = active === null ? null : list[active];
+  return <>
+    <PageHero label="The inspiration gallery" title="Rooms to imagine yourself in." description="Explore curtain layers, material palettes and room ideas for your own space." />
+    <section className="section portfolio">
+      <div className="filter-tabs center wrap">{galleryCategories.map(category => <button key={category} type="button" aria-pressed={cat === category} className={cat === category ? 'active' : ''} onClick={() => {const params = new URLSearchParams(searchParams); if (category === 'All') params.delete('category'); else params.set('category', category.toLowerCase()); setSearchParams(params, {preventScrollReset:true});}}>{category}</button>)}</div>
+      <p className="filter-results" role="status" aria-live="polite" aria-atomic="true">{list.length} room {list.length === 1 ? 'idea' : 'ideas'}{visible < list.length ? ` · Showing ${visible}` : ''}</p>
+      <div className="gallery-grid">{list.slice(0, visible).map((item, index) => <article key={item.slug} data-reveal>
+        <button className="gallery-open" data-gallery-index={index} onClick={() => setActive(index)} aria-label={`Open ${item.title} image`}><GalleryPhoto item={item} /><span>View room <Plus size={19}/></span></button>
+        <Link to={`/portfolio/${item.slug}/`}><h2>{item.title}</h2><span>{item.category}<ArrowUpRight size={16}/></span></Link>
+      </article>)}</div>
+      {visible < list.length && <div className="gallery-more"><button className="button" type="button" onClick={() => {const next = visible; setVisible(value => value + 12); requestAnimationFrame(() => document.querySelector<HTMLButtonElement>(`[data-gallery-index="${next}"]`)?.focus({preventScroll:true}));}}>Explore more rooms <Plus size={18}/></button><p>{list.length - visible} more ideas to discover</p></div>}
+      <p className="small-note center">A curated mix of Curtain Hive collection imagery and independent photography. Photo credits are available in each image view.</p>
+    </section>
+    {selected && active !== null && <Modal title={selected.title} onClose={() => setActive(null)} wide><div className="lightbox">
+      <GalleryPhoto key={selected.image} item={selected} full />
+      <div className="lightbox-navigation"><button className="icon-button" aria-label="Previous image" onClick={() => setActive((active + list.length - 1) % list.length)}><ChevronLeft/></button><span aria-live="polite">{selected.title} · {active + 1} / {list.length}</span><button className="icon-button" aria-label="Next image" onClick={() => setActive((active + 1) % list.length)}><ChevronRight/></button></div>
+      <GalleryCredit item={selected}/>
+      <Button to={`/consultation/?service=${galleryService(selected.category)}`}>Inspired? Let’s talk</Button>
+    </div></Modal>}
+    <CTA/>
+  </>;
+}
+function PortfolioDetail() {
+  const {slug} = useParams();
+  const item = gallery.find(item => item.slug === slug);
+  if (!item) return <NotFound/>;
+  return <><PageHero label={`${item.category} inspiration`} title={item.title} description="A starting point for the colours, materials and proportions in your own space."/>
+    <section className="section portfolio-detail"><figure><GalleryPhoto item={item} full/><figcaption><GalleryCredit item={item}/></figcaption></figure><div><h2>Make it your own.</h2><p>Bring the elements you like from this image into a conversation with the team. We can discuss available materials, proportions and finishes for your room.</p><p className="small-note">Curated design inspiration. This photograph is not presented as a Curtain Hive customer installation.</p><Button to={`/consultation/?service=${galleryService(item.category)}`}>Discuss a similar direction</Button></div></section>
+  </>;
+}
+
 function Journal(){return <><PageHero label="The Curtain Hive journal" title="A more considered home." description="A few starting points for thinking about your windows, walls and the way you live."/><section className="section journal"><p className="editorial-note">Preview reading · These new editorial drafts are awaiting review by Curtain Hive.</p><div className="journal-grid">{articles.map(a=><Link to={`/news-blog/${a.slug}/`} key={a.slug} data-reveal><Pic src={a.image} alt={a.title}/><p className="kicker">{a.category} · Draft guide</p><h2>{a.title}</h2><p>{a.excerpt}</p><span className="text-link">Read the guide <ArrowUpRight size={17}/></span></Link>)}</div></section><CTA/></>} // taste-skill-ignore: Editorial labels explicitly required by the user brief; see creative-notes.md.
 function Article(){const {slug}=useParams();const a=articles.find(a=>a.slug===slug);if(!a)return <NotFound/>;return <><PageHero label={`${a.category} · Editorial draft`} title={a.title} description={a.excerpt}/><article className="article-body section"><Pic src={a.image} alt={a.title} priority/><div className="article-copy"><p className="editorial-note">New draft for Curtain Hive review. This is not a previously published company article.</p>{a.body.map(([h,p])=><section key={h}><h2>{h}</h2><p>{p}</p></section>)}<Button to="/consultation/">Talk about your room</Button></div></article><section className="section"><SectionHead title="Keep exploring."/><div className="journal-grid related-articles">{articles.filter(x=>x.slug!==slug).map(x=><Link key={x.slug} to={`/news-blog/${x.slug}/`}><Pic src={x.image} alt={x.title}/><h3>{x.title}</h3></Link>)}</div></section></>}
 function PhotoUpload(){const [photo,setPhoto]=useState('');const [error,setError]=useState('');useEffect(()=>()=>{if(photo)URL.revokeObjectURL(photo);},[photo]);return <div className="photo-upload"><label className="upload-label"><Upload size={20}/><span>Add a room photo <small>Optional · JPG, PNG or WebP, up to 10 MB</small></span><input type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];if(!f)return;if(!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>10*1024*1024){setError('Choose a JPG, PNG or WebP image smaller than 10 MB.');return;}setError('');setPhoto(URL.createObjectURL(f));}}/></label>{error&&<p role="alert">{error}</p>}{photo&&<div className="photo-preview"><img src={photo} alt="Your room photo preview"/><button type="button" onClick={()=>setPhoto('')} className="text-link">Remove photo</button><p className="small-note">Local preview only. Attach this photo separately in WhatsApp; it has not been uploaded or sent.</p></div>}</div>}

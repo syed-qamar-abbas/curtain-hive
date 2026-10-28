@@ -1,5 +1,6 @@
 import { articles, business, media, products, services } from './data';
 import { insights, insightEditorial, insightWordCount } from './insights-data';
+import { gallery } from './gallery';
 
 export const siteOrigin = (import.meta.env.VITE_SITE_ORIGIN || 'https://curtain-hive-studio.toolpoint73.chatgpt.site').replace(/\/+$/, '');
 export const siteIndexable = import.meta.env.VITE_INDEXABLE === 'true';
@@ -16,7 +17,7 @@ const routeTitles: Record<string, string> = {
   '/checkout/': 'Checkout preview', '/wishlist/': 'Your saved pieces',
   '/privacy-policy/': 'Privacy information', '/terms-and-conditions/': 'Customer terms',
 };
-const galleryTitles: Record<string, string> = { 'soft-daylight': 'Soft daylight', 'rich-in-texture': 'Rich in texture', 'room-to-gather': 'Room to gather', 'a-quiet-pattern': 'A quiet pattern', 'clean-lines': 'Clean lines', 'softly-sculpted': 'Softly sculpted', 'classic-drapery': 'Classic drapery', 'botanical-walls': 'Botanical walls' };
+const galleryTitles: Record<string, string> = Object.fromEntries(gallery.map(item => [item.slug, item.title]));
 const categoryNames = [...new Set(['curtains', 'wallpaper', ...products.flatMap(product => product.categories || [])])];
 const tagNames = [...new Set(products.flatMap(product => product.tags || []))];
 export const allPagePaths = [
@@ -35,12 +36,13 @@ export function pageMetadata(path: string, search = ''): PageMetadata {
   const service = pathname.startsWith('/our-services/') ? services.find(item => item.slug === slug) : undefined;
   const product = pathname.startsWith('/product/') ? products.find(item => item.slug === slug) : undefined;
   const journal = pathname.startsWith('/news-blog/') ? articles.find(item => item.slug === slug) : undefined;
-  const galleryTitle = pathname.startsWith('/portfolio/') ? galleryTitles[slug || ''] : undefined;
+  const galleryItem = pathname.startsWith('/portfolio/') ? gallery.find(item => item.slug === slug) : undefined;
+  const galleryTitle = galleryItem?.title;
   const exists = allPagePaths.includes(pathname);
   const title = article?.seoTitle || routeTitles[pathname] || service?.name || product?.name || journal?.title || galleryTitle || (exists && pathname.startsWith('/product-category/') ? `Collection: ${slug!.replaceAll('-', ' ')}` : exists && pathname.startsWith('/product-tag/') ? `Tagged: ${slug!.replaceAll('-', ' ')}` : 'Page not found');
-  const description = article?.description || (pathname === '/insights/' ? 'Practical guides to curtains, motorized blinds, wallpaper, upholstery and custom furniture. Clear answers for your Rawalpindi or Islamabad home.' : service?.description ? `${service.description} Discuss ${service.short.toLowerCase()} for your home in Rawalpindi or Islamabad with Curtain Hive.` : journal?.excerpt || `${title}. Explore Curtain Hive curtains, blinds, wallpaper, upholstery and furniture in Rawalpindi and Islamabad. Arrange a free home consultation.`);
+  const description = article?.description || (galleryItem ? `${galleryItem.alt} Explore ${galleryItem.category.toLowerCase()} inspiration for your room with Curtain Hive.` : pathname === '/insights/' ? 'Practical guides to curtains, motorized blinds, wallpaper, upholstery and custom furniture. Clear answers for your Rawalpindi or Islamabad home.' : service?.description ? `${service.description} Discuss ${service.short.toLowerCase()} for your home in Rawalpindi or Islamabad with Curtain Hive.` : journal?.excerpt || `${title}. Explore Curtain Hive curtains, blinds, wallpaper, upholstery and furniture in Rawalpindi and Islamabad. Arrange a free home consultation.`);
   const canonical = absolute(pathname);
-  const image = absolute(article?.image || service?.image || product?.image || journal?.image || media.hero);
+  const image = absolute(article?.image || galleryItem?.image || service?.image || product?.image || journal?.image || media.hero);
   const utility = ['/cart/', '/checkout/', '/wishlist/', '/privacy-policy/', '/terms-and-conditions/'].includes(pathname) || pathname.startsWith('/news-blog/') || pathname.startsWith('/product-tag/');
   const indexable = siteIndexable && exists && !utility && !search;
   const organizationId = `${siteOrigin}/#organization`, websiteId = `${siteOrigin}/#website`, pageId = `${canonical}#webpage`;

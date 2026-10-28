@@ -2,6 +2,8 @@
 
 Implementation and browser QA: 26 October 2026. Delivery/access rechecked: 28 October 2026.
 
+Later update, 28 October: access to the original public Sites project was restored during the Inspiration gallery extension. The blocked-publication paragraph below records the earlier delivery state. See `GALLERY-UPDATE.md` and the current deployment result for the later release, which also includes this Insights implementation.
+
 ## Delivered in the source
 
 - The existing homepage hero now presents all five services with three thumbnails visible at a time. Cards change the photograph, description and service destination. Previous/next controls, keyboard navigation, native touch scrolling and reduced-motion support work without autoplay.

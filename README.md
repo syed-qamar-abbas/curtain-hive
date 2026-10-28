@@ -4,6 +4,8 @@ React 19, TypeScript, Vite 7 and Tailwind CSS 4. Data-driven services, product p
 
 ## Services and Insights release — October 2026
 
+Gallery expansion, 28 October: Inspiration now includes **25 additional real photographs**, five each for Curtains, Blinds, Wallpaper, Upholstery and Furniture. The gallery has 33 ideas, category links, progressive loading, responsive local WebP images and photographer credits in image/detail views. The build now produces **90 full HTML routes**. See [GALLERY-UPDATE.md](GALLERY-UPDATE.md) and [photo provenance](research/inspiration-images.json). This supersedes the route counts in the earlier release notes below.
+
 The hero now has five service previews with three visible thumbnails, manual navigation and service-specific destinations. `/insights/` contains five complete, source-referenced furnishing guides with comparisons, interactive checklists, FAQs and related reads. Navigation, homepage and service pages link to the new guides.
 
 The build now renders **65 complete HTML routes**, including full article text readable without JavaScript. Canonicals, social metadata and structured data share one route-aware source. The default client-preview build uses `noindex,follow`; production-domain/indexing configuration is documented in `.env.example` and [INSIGHTS-EDITORIAL.md](INSIGHTS-EDITORIAL.md). No search ranking, AI citation or analytics result is implied.
@@ -33,7 +35,7 @@ The development site runs at `http://127.0.0.1:5173/`. `npm run build` produces 
 
 ## Content integrity
 
-All 25 images were downloaded directly from curtainhive.com; the existing logo is unchanged. The six product names and published prices, exact original company introduction, and three original testimonials were recovered from the homepage. Full source exports and asset provenance are in `research/`.
+The original 25 images were downloaded directly from curtainhive.com; the existing logo is unchanged. The Inspiration extension adds 25 photographs sourced from Pexels, with their creator, source page and licence recorded in `research/inspiration-images.json`. The six product names and published prices, exact original company introduction, and three original testimonials were recovered from the homepage. Full source exports and asset provenance are in `research/`.
 
 The product pages and commerce APIs returned access errors. Product units, technical attributes, detailed descriptions, stock, taxes, delivery and payment configuration remain unverified. No specifications were fabricated. The fallback product descriptions explicitly invite confirmation.
 
