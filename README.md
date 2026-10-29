@@ -8,6 +8,8 @@ Gallery expansion, 28 October: Inspiration now includes **25 additional real pho
 
 Contact follow-up, 28 October: the Contact form is replaced with one direct WhatsApp CTA, alongside showroom details. See [CONTACT-UPDATE.md](CONTACT-UPDATE.md).
 
+Image-quality update, 29 October: 44 rendered photographs now use high-resolution or conventionally upscaled WebP assets, responsive size selection and full-resolution gallery views. See [IMAGE-QUALITY-REPORT.md](IMAGE-QUALITY-REPORT.md) for the methods, sources and checks.
+
 The hero now has five service previews with three visible thumbnails, manual navigation and service-specific destinations. `/insights/` contains five complete, source-referenced furnishing guides with comparisons, interactive checklists, FAQs and related reads. Navigation, homepage and service pages link to the new guides.
 
 The build now renders **65 complete HTML routes**, including full article text readable without JavaScript. Canonicals, social metadata and structured data share one route-aware source. The default client-preview build uses `noindex,follow`; production-domain/indexing configuration is documented in `.env.example` and [INSIGHTS-EDITORIAL.md](INSIGHTS-EDITORIAL.md). No search ranking, AI citation or analytics result is implied.

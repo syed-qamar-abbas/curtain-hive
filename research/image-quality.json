@@ -1,0 +1,1481 @@
+{
+  "date": "2026-10-29",
+  "photos": 44,
+  "methodAuthorization": "User approved standard non-AI upscaling and light sharpening after imagegen usage limit.",
+  "images": [
+    {
+      "original": "/images/about-interior.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2025/12/1cca14076b1ca907c3b1889504094e75.jpg",
+      "originalWidth": 736,
+      "originalHeight": 736,
+      "nativeWidth": 736,
+      "nativeHeight": 736,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/about-interior-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/about-interior-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 83172,
+          "sha256": "b9d5f2538fcaf9afd5be7a94d91d619ca411dee0c7cc2d1a7fe29299287fdb14"
+        },
+        {
+          "src": "/images/enhanced/about-interior-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 194016,
+          "sha256": "41243dad4cb2f2ccdf0d1c3c9694414ecbcd3520139b484ac11370cf61d10905"
+        }
+      ]
+    },
+    {
+      "original": "/images/blinds-service.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/daa91d26912a06cc658cfc23d40b0fb1.jpg",
+      "originalWidth": 735,
+      "originalHeight": 490,
+      "nativeWidth": 735,
+      "nativeHeight": 490,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/blinds-service-1600.webp",
+      "width": 1600,
+      "height": 1067,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-service-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 67600,
+          "sha256": "344989a955f4763bdb19b2a8350f18b3269b464a0a5a4c147a3f24cff012886a"
+        },
+        {
+          "src": "/images/enhanced/blinds-service-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 147124,
+          "sha256": "39319e34ed9dceda6791ee2bd361999a4fd5b02595091787e1efd97e5b57a1f8"
+        }
+      ]
+    },
+    {
+      "original": "/images/consultation.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2025/12/3a9fc1f716b5bffc5f9efdc2a5211bfc.jpg",
+      "originalWidth": 700,
+      "originalHeight": 369,
+      "nativeWidth": 700,
+      "nativeHeight": 369,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/consultation-1600.webp",
+      "width": 1600,
+      "height": 843,
+      "variants": [
+        {
+          "src": "/images/enhanced/consultation-800.webp",
+          "width": 800,
+          "height": 422,
+          "bytes": 57876,
+          "sha256": "1119723a313134d8a171aebc363766344f51c0d2fc884419c07c9ab5fc4d50a3"
+        },
+        {
+          "src": "/images/enhanced/consultation-1600.webp",
+          "width": 1600,
+          "height": 843,
+          "bytes": 140292,
+          "sha256": "7e53a11272dc6245f5a4e91b381daca02abd7dea7752d0e22e948c1f277761be"
+        }
+      ]
+    },
+    {
+      "original": "/images/crafting.webp",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/60051a9688523b482332756f0d1027ff.webp",
+      "originalWidth": 1200,
+      "originalHeight": 800,
+      "nativeWidth": 1200,
+      "nativeHeight": 800,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/crafting-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/crafting-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 101434,
+          "sha256": "d654f9fc0197254ec7267fff236e16dbe07d7446f664930e91ad9afbe1420974"
+        },
+        {
+          "src": "/images/enhanced/crafting-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 239830,
+          "sha256": "11c68a9ee195e0d5419edcbe1b0836c9211d5c4eec541276dccf5b0d3ec4caf1"
+        },
+        {
+          "src": "/images/enhanced/crafting-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 408142,
+          "sha256": "9c23353b0e910870859f42b4fd7fc0535786abc320eadec4fd374a13db7d66c1"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-blackout-detail.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/822866891f39fe83093b8a6bf1c60080.jpg",
+      "originalWidth": 480,
+      "originalHeight": 428,
+      "nativeWidth": 480,
+      "nativeHeight": 428,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-blackout-detail-1600.webp",
+      "width": 1600,
+      "height": 1427,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blackout-detail-800.webp",
+          "width": 800,
+          "height": 713,
+          "bytes": 75348,
+          "sha256": "52ac324c8e00e20a87a50ad137e7c901fc15d6e0e1f89bfcdac7eff1f6de0aa9"
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-detail-1600.webp",
+          "width": 1600,
+          "height": 1427,
+          "bytes": 167428,
+          "sha256": "9b3e73e5c3b7d7168ff1bb290303727b24493eaf4768eb7d5f2828777170be43"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-blackout.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/00d12b9d608db0bf3ce1a90fa300f073-1000x1000.jpg",
+      "originalWidth": 1000,
+      "originalHeight": 1000,
+      "nativeWidth": 1200,
+      "nativeHeight": 1200,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-blackout-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blackout-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 124466,
+          "sha256": "38ddd63d2420e45878e4b8fda8b3609da8df2d53431ffe3ac51248d693cb8a9e"
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 270476,
+          "sha256": "e311eef5631c51873dc5cf7a071c7ffbba476ac1644f653ea3f3b013ac990889"
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-2400.webp",
+          "width": 2400,
+          "height": 2400,
+          "bytes": 457286,
+          "sha256": "08b0d3f4f99eeb8c943ccadc3a5c949ac6ff06887d6e7849bf4c36b08be5c635"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-drapes-detail.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/23.jpg",
+      "originalWidth": 640,
+      "originalHeight": 640,
+      "nativeWidth": 640,
+      "nativeHeight": 640,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-drapes-detail-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-drapes-detail-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 34782,
+          "sha256": "ef81b64c032c6e2629a31721daa7fd881a3459d8f40eb6aa76f4586d90d1f49c"
+        },
+        {
+          "src": "/images/enhanced/curtains-drapes-detail-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 77708,
+          "sha256": "ab3d40e13f80a7964cfeafb6001645f8df1957269a26f35a6cf616dc870c2c81"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-drapes.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/1w.jpg",
+      "originalWidth": 340,
+      "originalHeight": 340,
+      "nativeWidth": 340,
+      "nativeHeight": 340,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-drapes-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-drapes-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 65458,
+          "sha256": "4556dd029f0bae76c267980d61c0d8255b637fb8685d2b1f7425b5aadd9da692"
+        },
+        {
+          "src": "/images/enhanced/curtains-drapes-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 150170,
+          "sha256": "2b8350fb1227e322a04c297112d35d189e934c2db4f0087ec2b5a7e771127db2"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-service.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/779fee383cd1197bca40fbe02e33afe8.jpg",
+      "originalWidth": 1199,
+      "originalHeight": 799,
+      "nativeWidth": 1199,
+      "nativeHeight": 799,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-service-2398.webp",
+      "width": 2398,
+      "height": 1598,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-service-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 72154,
+          "sha256": "d8de6b1c3e64f7ed9afc1309525619e10d5f4f595f33a5c3cfdc1a0cb17bd94d"
+        },
+        {
+          "src": "/images/enhanced/curtains-service-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 195048,
+          "sha256": "50849166eb824d3d296c4e494a88388db5430ef44511c1b24fa942b2650fae19"
+        },
+        {
+          "src": "/images/enhanced/curtains-service-2398.webp",
+          "width": 2398,
+          "height": 1598,
+          "bytes": 315220,
+          "sha256": "e8f35cc0e11049195cf6945aac1be44be53f9ce2db338a78b3d7b6e0d26f279f"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-sheer-detail.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/ea96361bf78e3bfdee153c93415784ae.jpg",
+      "originalWidth": 736,
+      "originalHeight": 736,
+      "nativeWidth": 736,
+      "nativeHeight": 736,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-sheer-detail-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-sheer-detail-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 110650,
+          "sha256": "c0e3b412ac9cdc0eea9efaa1a5b7dd11b640ea63201e0063e280a700513e1409"
+        },
+        {
+          "src": "/images/enhanced/curtains-sheer-detail-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 269334,
+          "sha256": "e556849d2958e1374aec3a95329d5eb7e7ac60d9cded39461c086d5723e215ed"
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-sheer.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/5a116dddee8deed253c3cd6743ca0019.jpg",
+      "originalWidth": 736,
+      "originalHeight": 736,
+      "nativeWidth": 736,
+      "nativeHeight": 736,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/curtains-sheer-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-sheer-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 86174,
+          "sha256": "5f8fc45e18b0e74932e4417c0f20d98bff7a1242f18f18ca5e2d8949c4efc287"
+        },
+        {
+          "src": "/images/enhanced/curtains-sheer-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 206754,
+          "sha256": "7800ca49c5264e743ceaed40537cc6784ce7fe0389b9c6458ab89f02b98b5aa8"
+        }
+      ]
+    },
+    {
+      "original": "/images/furniture-service.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/01e75bf36b9a08232e966fb3e27b1835.jpg",
+      "originalWidth": 735,
+      "originalHeight": 519,
+      "nativeWidth": 735,
+      "nativeHeight": 519,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/furniture-service-1600.webp",
+      "width": 1600,
+      "height": 1130,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-service-800.webp",
+          "width": 800,
+          "height": 565,
+          "bytes": 105216,
+          "sha256": "3fec95ee51d149c854153ea5474a90e4767e7978db671ce3535a48778bee3e23"
+        },
+        {
+          "src": "/images/enhanced/furniture-service-1600.webp",
+          "width": 1600,
+          "height": 1130,
+          "bytes": 235868,
+          "sha256": "657a4aa3fc31a84d7e7b286aee3a03bc4fbc583c8817aa75cf97ad1971305c0d"
+        }
+      ]
+    },
+    {
+      "original": "/images/gallery-room.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2025/12/tesst2.jpg",
+      "originalWidth": 736,
+      "originalHeight": 920,
+      "nativeWidth": 736,
+      "nativeHeight": 920,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/gallery-room-1472.webp",
+      "width": 1472,
+      "height": 1840,
+      "variants": [
+        {
+          "src": "/images/enhanced/gallery-room-800.webp",
+          "width": 800,
+          "height": 1000,
+          "bytes": 128730,
+          "sha256": "c3118041b6dc389f37c229fc7f22ffefb93a5ce0fd10a0fd2281edb3c1c4f6b9"
+        },
+        {
+          "src": "/images/enhanced/gallery-room-1472.webp",
+          "width": 1472,
+          "height": 1840,
+          "bytes": 251732,
+          "sha256": "71823a08f842c8d7e4ba3725fe471a1edd2b50d87a0841068078561e31358c10"
+        }
+      ]
+    },
+    {
+      "original": "/images/gallery-texture.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2025/12/2bc2f9b0bfe5c4efffd3d13c5834c29f.jpg",
+      "originalWidth": 736,
+      "originalHeight": 878,
+      "nativeWidth": 736,
+      "nativeHeight": 878,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/gallery-texture-1472.webp",
+      "width": 1472,
+      "height": 1756,
+      "variants": [
+        {
+          "src": "/images/enhanced/gallery-texture-800.webp",
+          "width": 800,
+          "height": 954,
+          "bytes": 101906,
+          "sha256": "e6bc35e26be68176600f090d679e1bc8809bc252ccc83d862a9eb7ea386ce6e8"
+        },
+        {
+          "src": "/images/enhanced/gallery-texture-1472.webp",
+          "width": 1472,
+          "height": 1756,
+          "bytes": 213442,
+          "sha256": "331de707fbed3f153bb486bdcd8b1f27f131e157368fd09e73029ef6bd63b18c"
+        }
+      ]
+    },
+    {
+      "original": "/images/hero-blinds.png",
+      "source": "https://curtainhive.com/wp-content/uploads/2025/11/6.png",
+      "originalWidth": 736,
+      "originalHeight": 736,
+      "nativeWidth": 736,
+      "nativeHeight": 736,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/hero-blinds-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/hero-blinds-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 106354,
+          "sha256": "d71c23153b74314a236d0636fa40c03928c6c27026b759b1e1eb05384ba43b16"
+        },
+        {
+          "src": "/images/enhanced/hero-blinds-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 254380,
+          "sha256": "86c95da7e1aaacd19cc9cd6ad65d5f1eb387732aa93b53686973cf2f0ed3abd2"
+        }
+      ]
+    },
+    {
+      "original": "/images/upholstery-service.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2026/01/e18efcb31cd8e5a17b49f269928edb22.jpg",
+      "originalWidth": 1080,
+      "originalHeight": 720,
+      "nativeWidth": 1080,
+      "nativeHeight": 720,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/upholstery-service-2160.webp",
+      "width": 2160,
+      "height": 1440,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-service-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 82376,
+          "sha256": "b233356019a4c20fcab43b6be16181467bb9853576a1b5b037aada2bebb00fc9"
+        },
+        {
+          "src": "/images/enhanced/upholstery-service-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 216934,
+          "sha256": "684b0e1d0b96501fe6ef5192cfe636c04e3e77d1dd54958f9fdb7799a6788609"
+        },
+        {
+          "src": "/images/enhanced/upholstery-service-2160.webp",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 302594,
+          "sha256": "13765027d182068ae87f99ce3bb0efab779c6e2da882ee89c923336725edeb71"
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-designer.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/p3a-1000x1000.jpg",
+      "originalWidth": 1000,
+      "originalHeight": 1000,
+      "nativeWidth": 1200,
+      "nativeHeight": 1200,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/wallpaper-designer-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-designer-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 120310,
+          "sha256": "6ab8ee3c1511701fb906d3363e0d5a6ae8630806ae8393d2bac162ce1cea4c43"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-designer-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 335620,
+          "sha256": "cd40fe56a5718aea49a6b80b17f66fa81aa09709abcdd3984d7694220b0eb91a"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-designer-2400.webp",
+          "width": 2400,
+          "height": 2400,
+          "bytes": 566250,
+          "sha256": "6e1a69e9642022d4a7860d6d4c6e75979a2cd4074d09fd2f8d69567dde4e94de"
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-patterned.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/b2c7b3177bd33f7c1a9a5d56e22589dc-1000x1000.jpg",
+      "originalWidth": 1000,
+      "originalHeight": 1000,
+      "nativeWidth": 1200,
+      "nativeHeight": 1200,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/wallpaper-patterned-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-patterned-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 84570,
+          "sha256": "f5663badb563afda245a87f130605bd2b9d127e0aa17f88046a7ec0059ce38da"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-patterned-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 235038,
+          "sha256": "e5e644c78bc50cd3cd5590d6046c96a316b25a63f865bf703cffe6a201f1f566"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-patterned-2400.webp",
+          "width": 2400,
+          "height": 2400,
+          "bytes": 407080,
+          "sha256": "a6badf46764dbb64461acb04e5b4833fe0e884378aa4db2515ec458f0e48054d"
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-vinyl.jpg",
+      "source": "https://curtainhive.com/wp-content/uploads/2024/05/153b93a5423c95fa326a35cd05793914.jpg",
+      "originalWidth": 736,
+      "originalHeight": 736,
+      "nativeWidth": 736,
+      "nativeHeight": 736,
+      "method": "Lanczos enlargement with conservative unsharp mask; no synthesized detail",
+      "image": "/images/enhanced/wallpaper-vinyl-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-vinyl-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 134708,
+          "sha256": "67223deec37ea805abc0747e2a34b79a2d1eec92e52dff655433ae451b07c5f1"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-vinyl-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 300402,
+          "sha256": "778bc768a684387cec0e7a5350be0cdc6bc1863600375f222cd46946a4ae18fb"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-layered-light.webp",
+      "source": "https://www.pexels.com/photo/living-room-with-couch-near-table-and-window-with-curtains-6782480/",
+      "deliveryUrl": "https://images.pexels.com/photos/6782480/pexels-photo-6782480.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2135,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/curtains-layered-light-3200.webp",
+      "width": 3200,
+      "height": 2135,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-layered-light-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 32082,
+          "sha256": "a79dfa78850bd24b1f805465b941e30945e186e79ab80577cdd86da39934632e"
+        },
+        {
+          "src": "/images/enhanced/curtains-layered-light-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 97092,
+          "sha256": "6cf8f620c8ee363fd001abbaa2fd1901e165949a940255bf3e264a7a0f8a3674"
+        },
+        {
+          "src": "/images/enhanced/curtains-layered-light-3200.webp",
+          "width": 3200,
+          "height": 2135,
+          "bytes": 227072,
+          "sha256": "92913c9994f0bc92565bd5134a496ad58aa41f4051a19ff2fe018514dd855251"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-sunlit-room.webp",
+      "source": "https://www.pexels.com/photo/window-blinds-on-glass-windows-7601070/",
+      "deliveryUrl": "https://images.pexels.com/photos/7601070/pexels-photo-7601070.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "nativeWidth": 3200,
+      "nativeHeight": 2133,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/blinds-sunlit-room-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 68502,
+          "sha256": "bc7fc433dda308c01c7762890e6b7b1d3cfd55ad546af4ef9033dfd670676b25"
+        },
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 215748,
+          "sha256": "d0391b4c2844a941f386807d4d100132f62d38a6dd5fcefb473b0f880c5261f0"
+        },
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-3200.webp",
+          "width": 3200,
+          "height": 2133,
+          "bytes": 437062,
+          "sha256": "704edf3061af7818fe41c97481ec61b866a705b2f09533b941e0e95d5a27d2ab"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-quiet-geometry.webp",
+      "source": "https://www.pexels.com/photo/an-interior-of-a-bedroom-7746094/",
+      "deliveryUrl": "https://images.pexels.com/photos/7746094/pexels-photo-7746094.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/wallpaper-quiet-geometry-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 81102,
+          "sha256": "5f197a71319d04cc1b84eea6538ce303b50e45a7e2dc050010c17c6fb2901947"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 240274,
+          "sha256": "673919a963e3c9e23c5b711ee487537d6845f3934d582ae810edc3d25bb95542"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 439248,
+          "sha256": "bf26a954e4328ff1266ceca5e2602817b67744a45da7a9622ee0242ff2f6d2ac"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-soft-grey.webp",
+      "source": "https://www.pexels.com/photo/comfortable-sofa-with-cushions-in-living-room-7195570/",
+      "deliveryUrl": "https://images.pexels.com/photos/7195570/pexels-photo-7195570.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/upholstery-soft-grey-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 95708,
+          "sha256": "b906ab6ee4c6e099edb6726448e9e75c34b5c9b2dd51b46cee17faf3a5d19c68"
+        },
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 362650,
+          "sha256": "fecae04fcaef02258519343637c69a3c5cd1eb3dc36a2cdece1303e295659bf9"
+        },
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 823358,
+          "sha256": "1deb11f5815ce14d64b05b1ba3d8bd4b4643ea975885f3f42a99956cba42bd5a"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-natural-dining.webp",
+      "source": "https://www.pexels.com/photo/wooden-chairs-around-a-dining-table-13315272/",
+      "deliveryUrl": "https://images.pexels.com/photos/13315272/pexels-photo-13315272.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1200,
+      "originalHeight": 1600,
+      "nativeWidth": 2400,
+      "nativeHeight": 3200,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/furniture-natural-dining-2400.webp",
+      "width": 2400,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-natural-dining-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 79098,
+          "sha256": "ab4d996702eedefef038e1987c4d116d4c7e757d07f26f2975bb9b58db7de0d0"
+        },
+        {
+          "src": "/images/enhanced/furniture-natural-dining-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 351058,
+          "sha256": "34feaa6a368773a6313d6ccecb763707f32b58f85f1adce291c04d4780127ca2"
+        },
+        {
+          "src": "/images/enhanced/furniture-natural-dining-2400.webp",
+          "width": 2400,
+          "height": 3200,
+          "bytes": 453878,
+          "sha256": "db04e448b286ae9c1acaebab18f1afd67fe0410d82aca1d154aa14190cb05f92"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-patterned-frame.webp",
+      "source": "https://www.pexels.com/photo/window-with-curtains-in-a-room-5860570/",
+      "deliveryUrl": "https://images.pexels.com/photos/5860570/pexels-photo-5860570.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1071,
+      "nativeWidth": 3200,
+      "nativeHeight": 2143,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/curtains-patterned-frame-3200.webp",
+      "width": 3200,
+      "height": 2143,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-800.webp",
+          "width": 800,
+          "height": 536,
+          "bytes": 78670,
+          "sha256": "248e6a83bda38dd6a6f60f96d651dfa169533b2cdb7cfb8b424974e903269c6d"
+        },
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-1600.webp",
+          "width": 1600,
+          "height": 1072,
+          "bytes": 234876,
+          "sha256": "c8b65590b26c8be9b5a3d0f8345fe7445361d4aeb1c1a024d8a76968cc03fce1"
+        },
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-3200.webp",
+          "width": 3200,
+          "height": 2143,
+          "bytes": 368498,
+          "sha256": "dd27929474448ba9d33529fbaf6accf2abe1cbb814cbf0d1c8df50080cf49bdf"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-horizontal-detail.webp",
+      "source": "https://www.pexels.com/photo/a-blinds-on-the-window-9892905/",
+      "deliveryUrl": "https://images.pexels.com/photos/9892905/pexels-photo-9892905.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "nativeWidth": 3200,
+      "nativeHeight": 2133,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/blinds-horizontal-detail-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 20250,
+          "sha256": "aac9826fd0a3313d6f4c5a1c1dc5ca0fbfb26ca53173f69eb9b5451da6b5c4fb"
+        },
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 59904,
+          "sha256": "763d4bb09ae7aba4803f924c446582b6804e3ca8f35dd54b11b6eed3a16dae55"
+        },
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-3200.webp",
+          "width": 3200,
+          "height": 2133,
+          "bytes": 140414,
+          "sha256": "1b85ae14bcc20765923925c8e594d4d8be801542e15f8175697e5c7c490967be"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-floral-room.webp",
+      "source": "https://www.pexels.com/photo/interior-design-of-apartment-in-tenement-house-8092166/",
+      "deliveryUrl": "https://images.pexels.com/photos/8092166/pexels-photo-8092166.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/wallpaper-floral-room-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 83014,
+          "sha256": "7a0539b4fbb4e71912f7f6b4eb086e7b0cdab0710886c9223e852faae05b5b06"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 246028,
+          "sha256": "b4c367612feaf2dd9282b1562a02865228bcb3a385844a3123a16215d91b2ae7"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 436878,
+          "sha256": "92c1440c6b3bd4f86591b79549a27c3b5e9991879d943d12798c5a3d792f5e2b"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-calm-linen.webp",
+      "source": "https://www.pexels.com/photo/long-sofa-in-spacious-living-room-7214329/",
+      "deliveryUrl": "https://images.pexels.com/photos/7214329/pexels-photo-7214329.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/upholstery-calm-linen-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 66754,
+          "sha256": "2ccd6df3c8304bef00bd7c6b37d7355f1d122b6ddcf1203598f57fc1c2991862"
+        },
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 188512,
+          "sha256": "0688140d878fdf93395c57fff161a63e268e95b898df89770abb51ca8599d9da"
+        },
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 364748,
+          "sha256": "41ae58bc50a3e972954f4eb26d16a4eb33bbcd88bca757e4475fd8b198164025"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-sculpted-timber.webp",
+      "source": "https://www.pexels.com/photo/an-interior-of-a-home-7746034/",
+      "deliveryUrl": "https://images.pexels.com/photos/7746034/pexels-photo-7746034.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1061,
+      "nativeWidth": 3200,
+      "nativeHeight": 2123,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/furniture-sculpted-timber-3200.webp",
+      "width": 3200,
+      "height": 2123,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-800.webp",
+          "width": 800,
+          "height": 531,
+          "bytes": 81282,
+          "sha256": "0f2f7848f48c9e724f3b74d13d37657fb154c0b9db7e0eecb044bd6ec3a5eea4"
+        },
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-1600.webp",
+          "width": 1600,
+          "height": 1062,
+          "bytes": 252184,
+          "sha256": "dc03cd04ed60a9b5016d91ea3cc16fbdb441d9b6698f4bb0ef6dab6f757eb62e"
+        },
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-3200.webp",
+          "width": 3200,
+          "height": 2123,
+          "bytes": 471632,
+          "sha256": "7c7284d10d17a543d576c2ddf4991a3d52b0976b836b5df8e6e6e2ce8053d7fb"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-blue-bedroom.webp",
+      "source": "https://www.pexels.com/photo/interior-of-bedroom-with-pearl-wallpapers-and-blue-curtains-6207820/",
+      "deliveryUrl": "https://images.pexels.com/photos/6207820/pexels-photo-6207820.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "nativeWidth": 3200,
+      "nativeHeight": 2133,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/curtains-blue-bedroom-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 88874,
+          "sha256": "c22e60e2457b6aa111f897cfbed5b593303fb70ac5d29b5804bc4bdd29d3fb88"
+        },
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 378240,
+          "sha256": "12e20f1d8b0dcaa55bb5c9eab2e31163436ab0ba570f3bab6574eb440ca16b56"
+        },
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-3200.webp",
+          "width": 3200,
+          "height": 2133,
+          "bytes": 1209560,
+          "sha256": "6b2266a86a00bf562004c25bc638996e7e5357f20999052897b8f2a5ab0a06df"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-soft-daylight.webp",
+      "source": "https://www.pexels.com/photo/white-window-blinds-on-window-11606684/",
+      "deliveryUrl": "https://images.pexels.com/photos/11606684/pexels-photo-11606684.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1068,
+      "originalHeight": 1600,
+      "nativeWidth": 2136,
+      "nativeHeight": 3200,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/blinds-soft-daylight-2136.webp",
+      "width": 2136,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-800.webp",
+          "width": 800,
+          "height": 1199,
+          "bytes": 85166,
+          "sha256": "7ac438a151b2621aad238ff5209a9094d03b5b6a08a6bbff243761d100da1cf1"
+        },
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-1600.webp",
+          "width": 1600,
+          "height": 2397,
+          "bytes": 251430,
+          "sha256": "2045fe7e558d64d47cc8c8c99ad628c823c0f9188f83de02b649183f522a73f0"
+        },
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-2136.webp",
+          "width": 2136,
+          "height": 3200,
+          "bytes": 258592,
+          "sha256": "d5ba9c84e508b69bcc6a9d6ac6337b75eeb169ae944f40408275061adc660944"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-welcoming-hall.webp",
+      "source": "https://www.pexels.com/photo/home-hallway-interior-design-7546558/",
+      "deliveryUrl": "https://images.pexels.com/photos/7546558/pexels-photo-7546558.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/wallpaper-welcoming-hall-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 101096,
+          "sha256": "b4e08e4c2a87ff7eae0237acbc16e22eea8053a43c76668c11c248c841e1e8d1"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 270292,
+          "sha256": "7f8785b11dbaad174368ea539eb4026a5a3d68e4b01bc24bae80a72357974575"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 424504,
+          "sha256": "b66f79b83906d0c8a095c5f1579c353672e288998626506d2d9fa4134731a9df"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-green-velvet.webp",
+      "source": "https://www.pexels.com/photo/green-sofa-in-the-living-room-6580413/",
+      "deliveryUrl": "https://images.pexels.com/photos/6580413/pexels-photo-6580413.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1074,
+      "nativeWidth": 3200,
+      "nativeHeight": 2148,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/upholstery-green-velvet-3200.webp",
+      "width": 3200,
+      "height": 2148,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-800.webp",
+          "width": 800,
+          "height": 537,
+          "bytes": 73558,
+          "sha256": "0a09aac41bd2d9ab4b57d365f380f7f276841d0637040e6ef27e1094210e7361"
+        },
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-1600.webp",
+          "width": 1600,
+          "height": 1074,
+          "bytes": 223308,
+          "sha256": "4509c73f345223eeeb7c1b174bce59ea5cf3ef68a7d7eb54c3b707cfd447d47f"
+        },
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-3200.webp",
+          "width": 3200,
+          "height": 2148,
+          "bytes": 405086,
+          "sha256": "1db19ef9d89c974dfba0aef38d03d9f564d1f6f0153c0961aeaa7127b1071b2d"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-writing-desk.webp",
+      "source": "https://www.pexels.com/photo/wooden-desk-and-armchair-in-modern-office-7046161/",
+      "deliveryUrl": "https://images.pexels.com/photos/7046161/pexels-photo-7046161.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/furniture-writing-desk-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-writing-desk-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 50468,
+          "sha256": "854f638828921482f0dcd5494255e78ba782c4276d4c7ea84a521ecd4077f12d"
+        },
+        {
+          "src": "/images/enhanced/furniture-writing-desk-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 145976,
+          "sha256": "d753b5d4199afde6cb6dc001467912fc5bec27fc59e83640b530622937012304"
+        },
+        {
+          "src": "/images/enhanced/furniture-writing-desk-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 263284,
+          "sha256": "23c20313257610b13f79f6ae169d90c5d0327315003b0b76b993fdc5b2de1bdb"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-panoramic-room.webp",
+      "source": "https://www.pexels.com/photo/spacious-living-room-with-curtains-on-panoramic-windows-7061428/",
+      "deliveryUrl": "https://images.pexels.com/photos/7061428/pexels-photo-7061428.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1049,
+      "nativeWidth": 3200,
+      "nativeHeight": 2099,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/curtains-panoramic-room-3200.webp",
+      "width": 3200,
+      "height": 2099,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-800.webp",
+          "width": 800,
+          "height": 525,
+          "bytes": 71258,
+          "sha256": "910e1593b52c1b74df26d79530949031ca4321b358fb863fc2d9cbe10e7c1b50"
+        },
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-1600.webp",
+          "width": 1600,
+          "height": 1050,
+          "bytes": 235160,
+          "sha256": "c1c453740ea51f0ecd505e197b12d82a441035b303eb4cf5b2f8e177e57142a8"
+        },
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-3200.webp",
+          "width": 3200,
+          "height": 2099,
+          "bytes": 455868,
+          "sha256": "364e5b422e60ef34e1bf50bc84f7171de36d0698fa56bd618de498057a7b5f76"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-vertical-rhythm.webp",
+      "source": "https://www.pexels.com/photo/gray-window-blinds-239854/",
+      "deliveryUrl": "https://images.pexels.com/photos/239854/pexels-photo-239854.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 899,
+      "nativeWidth": 3200,
+      "nativeHeight": 1798,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/blinds-vertical-rhythm-3200.webp",
+      "width": 3200,
+      "height": 1798,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 119778,
+          "sha256": "376d3e0de263fef788981b956ffef1dca17bf0cc5a994e555976d338d7281b3e"
+        },
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-1600.webp",
+          "width": 1600,
+          "height": 899,
+          "bytes": 470238,
+          "sha256": "79283cf7c68cec00d669d8f06880c2112a0fac32418f9f062e4aa9fcb1df9e6a"
+        },
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-3200.webp",
+          "width": 3200,
+          "height": 1798,
+          "bytes": 820904,
+          "sha256": "250a849d46f5d16884bac7f0ab6130eb16a102f905bfbe6fd7376035ae709d03"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-blue-botanicals.webp",
+      "source": "https://www.pexels.com/photo/modern-bedroom-interior-with-furniture-and-lights-at-home-7005699/",
+      "deliveryUrl": "https://images.pexels.com/photos/7005699/pexels-photo-7005699.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/wallpaper-blue-botanicals-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 47412,
+          "sha256": "f6455ac3862a6ab7564665fc8786a81467030be4d18bdc39b50fedd142f5e839"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 129038,
+          "sha256": "b4e91f339c4bba7f53d7385928a9c7453bf632c926be0121098533122ff8b347"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 228212,
+          "sha256": "4248a6533659c21082200be6e354450ede8771a0cc0004cdc2417f2adf7b8322"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-warm-rust.webp",
+      "source": "https://www.pexels.com/photo/comfortable-couch-in-living-room-7031825/",
+      "deliveryUrl": "https://images.pexels.com/photos/7031825/pexels-photo-7031825.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/upholstery-warm-rust-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 67808,
+          "sha256": "8aa972544afa4f4a724b615dad576a728911a311771ff9b71a4515e5e5493017"
+        },
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 184174,
+          "sha256": "cc49e31ae9b48a203dfdd4ffd976db8adb495f663336f562206f4ad068cd8015"
+        },
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 321698,
+          "sha256": "dc529da697eb1903a3c94f4a8e5e249758667d85495239fe4673ecb0c479b842"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-rounded-sideboard.webp",
+      "source": "https://www.pexels.com/photo/apartment-interior-with-cabinet-with-vases-near-mirror-6480207/",
+      "deliveryUrl": "https://images.pexels.com/photos/6480207/pexels-photo-6480207.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1113,
+      "nativeWidth": 3200,
+      "nativeHeight": 2226,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/furniture-walnut-sideboard-3200.webp",
+      "width": 3200,
+      "height": 2226,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-800.webp",
+          "width": 800,
+          "height": 556,
+          "bytes": 21344,
+          "sha256": "b5014270280bc6a523918d21e67c6a65d927f86affe9a41d08a2fc081398d296"
+        },
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-1600.webp",
+          "width": 1600,
+          "height": 1113,
+          "bytes": 66506,
+          "sha256": "9928696baac58a26e27753331414e924047aac1f1cc44438805ce52bb0d59c6a"
+        },
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-3200.webp",
+          "width": 3200,
+          "height": 2226,
+          "bytes": 153108,
+          "sha256": "13581e4fc55ddebe2a9f52f4b29458740d50fab6214a67cf49a679f5ab57b3fe"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-vintage-light.webp",
+      "source": "https://www.pexels.com/photo/curtains-on-the-glass-window-14688211/",
+      "deliveryUrl": "https://images.pexels.com/photos/14688211/pexels-photo-14688211.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1067,
+      "originalHeight": 1600,
+      "nativeWidth": 2133,
+      "nativeHeight": 3200,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/curtains-vintage-light-2133.webp",
+      "width": 2133,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-vintage-light-800.webp",
+          "width": 800,
+          "height": 1200,
+          "bytes": 218980,
+          "sha256": "312112001feae354fecc45fbe5e6b066e714d6ce2c6ec550f12adbca6cf61cce"
+        },
+        {
+          "src": "/images/enhanced/curtains-vintage-light-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 1020994,
+          "sha256": "6afb37da58e7140b9bfecf0973357b6a267b55ed6b511ea6a43224c4eb0da214"
+        },
+        {
+          "src": "/images/enhanced/curtains-vintage-light-2133.webp",
+          "width": 2133,
+          "height": 3200,
+          "bytes": 1128574,
+          "sha256": "1ab9f2a23c034b67f188e005b913aee725ba9a11bf61ad0647d4945160234b8d"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-dappled-light.webp",
+      "source": "https://www.pexels.com/photo/light-reflection-from-the-window-blinds-8504844/",
+      "deliveryUrl": "https://images.pexels.com/photos/8504844/pexels-photo-8504844.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1067,
+      "originalHeight": 1600,
+      "nativeWidth": 2133,
+      "nativeHeight": 3200,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/blinds-dappled-light-2133.webp",
+      "width": 2133,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-dappled-light-800.webp",
+          "width": 800,
+          "height": 1200,
+          "bytes": 114296,
+          "sha256": "77de5494c1fee3060e669d3b74645e0dc0550fc69ca2bc89a1cef056f3723aff"
+        },
+        {
+          "src": "/images/enhanced/blinds-dappled-light-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 390796,
+          "sha256": "a0393b0eb9463414a2ec750ed17e23e8febf7c6cbfa56db7367f349d803283b6"
+        },
+        {
+          "src": "/images/enhanced/blinds-dappled-light-2133.webp",
+          "width": 2133,
+          "height": 3200,
+          "bytes": 532342,
+          "sha256": "d35b661eb1b75690c2249d038842a2a53837bf659da0bde5f5c8367a50b4c1f4"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-small-space.webp",
+      "source": "https://www.pexels.com/photo/bathroom-with-a-patterned-wall-15062163/",
+      "deliveryUrl": "https://images.pexels.com/photos/15062163/pexels-photo-15062163.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2134,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/wallpaper-small-space-3200.webp",
+      "width": 3200,
+      "height": 2134,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-small-space-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 76580,
+          "sha256": "8209ab4d970a89f62ef3efc480a9c7517363ea78156644f2860e4c41461af6ee"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-small-space-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 189618,
+          "sha256": "33b8fb1f7120e6513e6b0bcb0bc45db75431c4c7f4051980673ee21bc344f08c"
+        },
+        {
+          "src": "/images/enhanced/wallpaper-small-space-3200.webp",
+          "width": 3200,
+          "height": 2134,
+          "bytes": 394418,
+          "sha256": "4432c4abcf2396cab3624f0403694fe28004735ee7c8e0a5b1260f482baeaddf"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-classic-comfort.webp",
+      "source": "https://www.pexels.com/photo/interior-design-of-living-room-with-traditional-upholstered-furniture-8583802/",
+      "deliveryUrl": "https://images.pexels.com/photos/8583802/pexels-photo-8583802.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "nativeWidth": 3200,
+      "nativeHeight": 2133,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/upholstery-classic-comfort-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 83122,
+          "sha256": "fe54690c13dfb5dc7bb0a62bb327c235bb3a2068196e70718968b6bf1549c584"
+        },
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 299944,
+          "sha256": "68808746b7df768bebbb14c67a7492e92bd1fc5817df1d85ab3fb95c1cc97524"
+        },
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-3200.webp",
+          "width": 3200,
+          "height": 2133,
+          "bytes": 657528,
+          "sha256": "1db22f7dbfe01b000127362a91793a9e81a47736af53aa8067f6869bdc639993"
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-light-storage.webp",
+      "source": "https://www.pexels.com/photo/elegant-wooden-cabinet-with-drawers-7195582/",
+      "deliveryUrl": "https://images.pexels.com/photos/7195582/pexels-photo-7195582.jpeg?w=3200&h=3200&fit=max&q=92&fm=webp&cs=srgb",
+      "originalWidth": 1600,
+      "originalHeight": 1068,
+      "nativeWidth": 3200,
+      "nativeHeight": 2136,
+      "method": "Higher-resolution original photograph; no generative edits",
+      "image": "/images/enhanced/furniture-light-storage-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-light-storage-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 76438,
+          "sha256": "27d736116e3d5d76e6dd774d636eaa684098a7264e019ab3aa20721c16531486"
+        },
+        {
+          "src": "/images/enhanced/furniture-light-storage-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 279966,
+          "sha256": "3a22d5afb957acf6498a715b66540b085937647b56617296713bfe0e3ac580d4"
+        },
+        {
+          "src": "/images/enhanced/furniture-light-storage-3200.webp",
+          "width": 3200,
+          "height": 2136,
+          "bytes": 647686,
+          "sha256": "aa3fc9ddc595ccf85330ac6df95dea14e84edc5c61e858e8932245a49401925c"
+        }
+      ]
+    }
+  ]
+}

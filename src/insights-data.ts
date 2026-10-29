@@ -2,6 +2,8 @@ export type InsightSection = {
   id: string; title: string; paragraphs: string[]; bullets?: string[]; sources?: number[];
   image?: { src: string; alt: string; caption: string };
 };
+import { highQualityImage } from './image-delivery';
+
 export type Insight = {
   slug: string; title: string; seoTitle: string; category: string; serviceSlug: string;
   description: string; image: string; imageAlt: string; standfirst: string; answer: string;
@@ -338,7 +340,7 @@ export function insightEditorial(article: Insight) {
     datePublished: insightDate, dateModified: insightDate,
     review: { status: 'source-checked', checkedAt: insightDate, clientApproval: 'not-recorded', subjectMatterApprovalRequired: false },
     publicationStatus: 'published',
-    featuredImage: article.image, socialImage: article.image,
+    featuredImage: highQualityImage(article.image), socialImage: highQualityImage(article.image),
     imageCredit: 'Existing Curtain Hive website image collection; used as furnishing illustration.',
     relatedSlugs: related.map(relatedIndex => insights[relatedIndex].slug),
     ctaIntent: `Discuss ${article.category.toLowerCase()} options for the reader’s project`,

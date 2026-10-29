@@ -3,9 +3,10 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowUpRight, ArrowRight, Check, MessageCircle, Phone, ArrowDown, MoveRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { business, media, services, wa } from './data';
 import { InsightsTeaser } from './Insights';
+import { imageProps } from './image-delivery';
 
-function Photo({ src, alt, priority = false, className = '' }: { src: string; alt: string; priority?: boolean; className?: string }) {
-  return <img src={src} alt={alt} width="1200" height="900" loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : 'auto'} decoding="async" className={className} />;
+function Photo({ src, alt, priority = false, className = '', sizes }: { src: string; alt: string; priority?: boolean; className?: string; sizes?: string }) {
+  return <img {...imageProps(src, sizes)} alt={alt} loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : 'auto'} decoding="async" className={className} />;
 }
 
 const heroServices = services.map((service, index) => ({
@@ -37,7 +38,7 @@ function RoomExperience() {
       <h1 id="home-title"><span>A room that</span><span>feels like you.</span></h1>
       <p>Beautiful curtains. Considered interiors.<br /> Made around the way you live, in<br /> Rawalpindi & Islamabad.</p>
       <div className="hero-action-row"><Link className="button" to="/consultation/">Book free consultation <ArrowUpRight size={18} /></Link><a className="hero-style-link" href="#window-studio">Find my style <ArrowDown size={18} /></a></div>
-      <a className="hero-material-note" href="#finish-collection"><Photo src="/images/crafting.webp" alt="Curtain fabric textures" /><span><strong>Good rooms start with a feeling.</strong><span>Explore the fabrics. Find your finish.</span></span><ArrowUpRight size={20} /></a>
+      <a className="hero-material-note" href="#finish-collection"><Photo src="/images/crafting.webp" alt="Curtain fabric textures" sizes="80px" /><span><strong>Good rooms start with a feeling.</strong><span>Explore the fabrics. Find your finish.</span></span><ArrowUpRight size={20} /></a>
     </div>
     <div className="hero-room-canvas">
       <div className="mood-images" aria-hidden="true">{heroServices.map((item, index) => <Photo key={item.slug} src={item.image} alt="" priority={index === 0} className={`room-hero-photo ${index === active ? 'is-active' : ''}`} />)}</div>
@@ -52,7 +53,7 @@ function RoomExperience() {
         const index = event.key === 'Home' ? 0 : event.key === 'End' ? 4 : Math.max(0, Math.min(4, active + (event.key === 'ArrowRight' ? 1 : -1)));
         setActive(index);
         (options.current?.children[index] as HTMLButtonElement)?.focus({ preventScroll: true });
-      }}>{heroServices.map((item, index) => <button key={item.slug} type="button" aria-pressed={active === index} aria-label={`Preview ${item.name.toLowerCase()}`} onClick={() => setActive(index)}><span className="mood-thumbnail"><Photo src={item.image} alt="" />{active === index && <Check size={14} />}</span><span>{item.label}</span></button>)}</div>
+      }}>{heroServices.map((item, index) => <button key={item.slug} type="button" aria-pressed={active === index} aria-label={`Preview ${item.name.toLowerCase()}`} onClick={() => setActive(index)}><span className="mood-thumbnail"><Photo src={item.image} alt="" sizes="(max-width: 600px) 25vw, 15vw" />{active === index && <Check size={14} />}</span><span>{item.label}</span></button>)}</div>
       <p className="mood-caption" aria-live="polite" aria-atomic="true" key={active}>{service.detail}</p>
       <div className="service-picker-bottom"><Link className="mood-disclosure service-preview-link" to={`/our-services/${service.slug}/`}>Explore {service.short.toLowerCase()} <ArrowUpRight size={15} /></Link><div className="service-picker-arrows"><button type="button" aria-label="Previous service" disabled={active === 0} onClick={() => setActive(value => value - 1)}><ChevronLeft size={18} /></button><button type="button" aria-label="Next service" disabled={active === heroServices.length - 1} onClick={() => setActive(value => value + 1)}><ChevronRight size={18} /></button></div></div>
     </div>

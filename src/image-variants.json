@@ -1,0 +1,951 @@
+{
+  "images": [
+    {
+      "original": "/images/about-interior.jpg",
+      "image": "/images/enhanced/about-interior-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/about-interior-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/about-interior-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/blinds-service.jpg",
+      "image": "/images/enhanced/blinds-service-1600.webp",
+      "width": 1600,
+      "height": 1067,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-service-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/blinds-service-1600.webp",
+          "width": 1600,
+          "height": 1067
+        }
+      ]
+    },
+    {
+      "original": "/images/consultation.jpg",
+      "image": "/images/enhanced/consultation-1600.webp",
+      "width": 1600,
+      "height": 843,
+      "variants": [
+        {
+          "src": "/images/enhanced/consultation-800.webp",
+          "width": 800,
+          "height": 422
+        },
+        {
+          "src": "/images/enhanced/consultation-1600.webp",
+          "width": 1600,
+          "height": 843
+        }
+      ]
+    },
+    {
+      "original": "/images/crafting.webp",
+      "image": "/images/enhanced/crafting-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/crafting-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/crafting-1600.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/images/enhanced/crafting-2400.webp",
+          "width": 2400,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-blackout-detail.jpg",
+      "image": "/images/enhanced/curtains-blackout-detail-1600.webp",
+      "width": 1600,
+      "height": 1427,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blackout-detail-800.webp",
+          "width": 800,
+          "height": 713
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-detail-1600.webp",
+          "width": 1600,
+          "height": 1427
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-blackout.jpg",
+      "image": "/images/enhanced/curtains-blackout-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blackout-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-1600.webp",
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "src": "/images/enhanced/curtains-blackout-2400.webp",
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-drapes-detail.jpg",
+      "image": "/images/enhanced/curtains-drapes-detail-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-drapes-detail-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/curtains-drapes-detail-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-drapes.jpg",
+      "image": "/images/enhanced/curtains-drapes-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-drapes-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/curtains-drapes-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-service.jpg",
+      "image": "/images/enhanced/curtains-service-2398.webp",
+      "width": 2398,
+      "height": 1598,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-service-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/curtains-service-1600.webp",
+          "width": 1600,
+          "height": 1066
+        },
+        {
+          "src": "/images/enhanced/curtains-service-2398.webp",
+          "width": 2398,
+          "height": 1598
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-sheer-detail.jpg",
+      "image": "/images/enhanced/curtains-sheer-detail-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-sheer-detail-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/curtains-sheer-detail-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/curtains-sheer.jpg",
+      "image": "/images/enhanced/curtains-sheer-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-sheer-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/curtains-sheer-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/furniture-service.jpg",
+      "image": "/images/enhanced/furniture-service-1600.webp",
+      "width": 1600,
+      "height": 1130,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-service-800.webp",
+          "width": 800,
+          "height": 565
+        },
+        {
+          "src": "/images/enhanced/furniture-service-1600.webp",
+          "width": 1600,
+          "height": 1130
+        }
+      ]
+    },
+    {
+      "original": "/images/gallery-room.jpg",
+      "image": "/images/enhanced/gallery-room-1472.webp",
+      "width": 1472,
+      "height": 1840,
+      "variants": [
+        {
+          "src": "/images/enhanced/gallery-room-800.webp",
+          "width": 800,
+          "height": 1000
+        },
+        {
+          "src": "/images/enhanced/gallery-room-1472.webp",
+          "width": 1472,
+          "height": 1840
+        }
+      ]
+    },
+    {
+      "original": "/images/gallery-texture.jpg",
+      "image": "/images/enhanced/gallery-texture-1472.webp",
+      "width": 1472,
+      "height": 1756,
+      "variants": [
+        {
+          "src": "/images/enhanced/gallery-texture-800.webp",
+          "width": 800,
+          "height": 954
+        },
+        {
+          "src": "/images/enhanced/gallery-texture-1472.webp",
+          "width": 1472,
+          "height": 1756
+        }
+      ]
+    },
+    {
+      "original": "/images/hero-blinds.png",
+      "image": "/images/enhanced/hero-blinds-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/hero-blinds-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/hero-blinds-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/upholstery-service.jpg",
+      "image": "/images/enhanced/upholstery-service-2160.webp",
+      "width": 2160,
+      "height": 1440,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-service-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/upholstery-service-1600.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/images/enhanced/upholstery-service-2160.webp",
+          "width": 2160,
+          "height": 1440
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-designer.jpg",
+      "image": "/images/enhanced/wallpaper-designer-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-designer-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/wallpaper-designer-1600.webp",
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "src": "/images/enhanced/wallpaper-designer-2400.webp",
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-patterned.jpg",
+      "image": "/images/enhanced/wallpaper-patterned-2400.webp",
+      "width": 2400,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-patterned-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/wallpaper-patterned-1600.webp",
+          "width": 1600,
+          "height": 1600
+        },
+        {
+          "src": "/images/enhanced/wallpaper-patterned-2400.webp",
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "original": "/images/wallpaper-vinyl.jpg",
+      "image": "/images/enhanced/wallpaper-vinyl-1600.webp",
+      "width": 1600,
+      "height": 1600,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-vinyl-800.webp",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "src": "/images/enhanced/wallpaper-vinyl-1600.webp",
+          "width": 1600,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-layered-light.webp",
+      "image": "/images/enhanced/curtains-layered-light-3200.webp",
+      "width": 3200,
+      "height": 2135,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-layered-light-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/curtains-layered-light-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/curtains-layered-light-3200.webp",
+          "width": 3200,
+          "height": 2135
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-sunlit-room.webp",
+      "image": "/images/enhanced/blinds-sunlit-room-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-1600.webp",
+          "width": 1600,
+          "height": 1066
+        },
+        {
+          "src": "/images/enhanced/blinds-sunlit-room-3200.webp",
+          "width": 3200,
+          "height": 2133
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-quiet-geometry.webp",
+      "image": "/images/enhanced/wallpaper-quiet-geometry-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/wallpaper-quiet-geometry-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-soft-grey.webp",
+      "image": "/images/enhanced/upholstery-soft-grey-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/upholstery-soft-grey-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-natural-dining.webp",
+      "image": "/images/enhanced/furniture-natural-dining-2400.webp",
+      "width": 2400,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-natural-dining-800.webp",
+          "width": 800,
+          "height": 1067
+        },
+        {
+          "src": "/images/enhanced/furniture-natural-dining-1600.webp",
+          "width": 1600,
+          "height": 2133
+        },
+        {
+          "src": "/images/enhanced/furniture-natural-dining-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-patterned-frame.webp",
+      "image": "/images/enhanced/curtains-patterned-frame-3200.webp",
+      "width": 3200,
+      "height": 2143,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-800.webp",
+          "width": 800,
+          "height": 536
+        },
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-1600.webp",
+          "width": 1600,
+          "height": 1072
+        },
+        {
+          "src": "/images/enhanced/curtains-patterned-frame-3200.webp",
+          "width": 3200,
+          "height": 2143
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-horizontal-detail.webp",
+      "image": "/images/enhanced/blinds-horizontal-detail-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-1600.webp",
+          "width": 1600,
+          "height": 1066
+        },
+        {
+          "src": "/images/enhanced/blinds-horizontal-detail-3200.webp",
+          "width": 3200,
+          "height": 2133
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-floral-room.webp",
+      "image": "/images/enhanced/wallpaper-floral-room-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/wallpaper-floral-room-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-calm-linen.webp",
+      "image": "/images/enhanced/upholstery-calm-linen-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/upholstery-calm-linen-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-sculpted-timber.webp",
+      "image": "/images/enhanced/furniture-sculpted-timber-3200.webp",
+      "width": 3200,
+      "height": 2123,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-800.webp",
+          "width": 800,
+          "height": 531
+        },
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-1600.webp",
+          "width": 1600,
+          "height": 1062
+        },
+        {
+          "src": "/images/enhanced/furniture-sculpted-timber-3200.webp",
+          "width": 3200,
+          "height": 2123
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-blue-bedroom.webp",
+      "image": "/images/enhanced/curtains-blue-bedroom-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-1600.webp",
+          "width": 1600,
+          "height": 1066
+        },
+        {
+          "src": "/images/enhanced/curtains-blue-bedroom-3200.webp",
+          "width": 3200,
+          "height": 2133
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-soft-daylight.webp",
+      "image": "/images/enhanced/blinds-soft-daylight-2136.webp",
+      "width": 2136,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-800.webp",
+          "width": 800,
+          "height": 1199
+        },
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-1600.webp",
+          "width": 1600,
+          "height": 2397
+        },
+        {
+          "src": "/images/enhanced/blinds-soft-daylight-2136.webp",
+          "width": 2136,
+          "height": 3200
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-welcoming-hall.webp",
+      "image": "/images/enhanced/wallpaper-welcoming-hall-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/wallpaper-welcoming-hall-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-green-velvet.webp",
+      "image": "/images/enhanced/upholstery-green-velvet-3200.webp",
+      "width": 3200,
+      "height": 2148,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-800.webp",
+          "width": 800,
+          "height": 537
+        },
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-1600.webp",
+          "width": 1600,
+          "height": 1074
+        },
+        {
+          "src": "/images/enhanced/upholstery-green-velvet-3200.webp",
+          "width": 3200,
+          "height": 2148
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-writing-desk.webp",
+      "image": "/images/enhanced/furniture-writing-desk-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-writing-desk-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/furniture-writing-desk-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/furniture-writing-desk-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-panoramic-room.webp",
+      "image": "/images/enhanced/curtains-panoramic-room-3200.webp",
+      "width": 3200,
+      "height": 2099,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-800.webp",
+          "width": 800,
+          "height": 525
+        },
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-1600.webp",
+          "width": 1600,
+          "height": 1050
+        },
+        {
+          "src": "/images/enhanced/curtains-panoramic-room-3200.webp",
+          "width": 3200,
+          "height": 2099
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-vertical-rhythm.webp",
+      "image": "/images/enhanced/blinds-vertical-rhythm-3200.webp",
+      "width": 3200,
+      "height": 1798,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-800.webp",
+          "width": 800,
+          "height": 450
+        },
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-1600.webp",
+          "width": 1600,
+          "height": 899
+        },
+        {
+          "src": "/images/enhanced/blinds-vertical-rhythm-3200.webp",
+          "width": 3200,
+          "height": 1798
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-blue-botanicals.webp",
+      "image": "/images/enhanced/wallpaper-blue-botanicals-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/wallpaper-blue-botanicals-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-warm-rust.webp",
+      "image": "/images/enhanced/upholstery-warm-rust-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/upholstery-warm-rust-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-rounded-sideboard.webp",
+      "image": "/images/enhanced/furniture-walnut-sideboard-3200.webp",
+      "width": 3200,
+      "height": 2226,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-800.webp",
+          "width": 800,
+          "height": 556
+        },
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-1600.webp",
+          "width": 1600,
+          "height": 1113
+        },
+        {
+          "src": "/images/enhanced/furniture-walnut-sideboard-3200.webp",
+          "width": 3200,
+          "height": 2226
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/curtains-vintage-light.webp",
+      "image": "/images/enhanced/curtains-vintage-light-2133.webp",
+      "width": 2133,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/curtains-vintage-light-800.webp",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "src": "/images/enhanced/curtains-vintage-light-1600.webp",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "src": "/images/enhanced/curtains-vintage-light-2133.webp",
+          "width": 2133,
+          "height": 3200
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/blinds-dappled-light.webp",
+      "image": "/images/enhanced/blinds-dappled-light-2133.webp",
+      "width": 2133,
+      "height": 3200,
+      "variants": [
+        {
+          "src": "/images/enhanced/blinds-dappled-light-800.webp",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "src": "/images/enhanced/blinds-dappled-light-1600.webp",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "src": "/images/enhanced/blinds-dappled-light-2133.webp",
+          "width": 2133,
+          "height": 3200
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/wallpaper-small-space.webp",
+      "image": "/images/enhanced/wallpaper-small-space-3200.webp",
+      "width": 3200,
+      "height": 2134,
+      "variants": [
+        {
+          "src": "/images/enhanced/wallpaper-small-space-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/wallpaper-small-space-1600.webp",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/images/enhanced/wallpaper-small-space-3200.webp",
+          "width": 3200,
+          "height": 2134
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/upholstery-classic-comfort.webp",
+      "image": "/images/enhanced/upholstery-classic-comfort-3200.webp",
+      "width": 3200,
+      "height": 2133,
+      "variants": [
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-800.webp",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-1600.webp",
+          "width": 1600,
+          "height": 1066
+        },
+        {
+          "src": "/images/enhanced/upholstery-classic-comfort-3200.webp",
+          "width": 3200,
+          "height": 2133
+        }
+      ]
+    },
+    {
+      "original": "/images/inspiration/furniture-light-storage.webp",
+      "image": "/images/enhanced/furniture-light-storage-3200.webp",
+      "width": 3200,
+      "height": 2136,
+      "variants": [
+        {
+          "src": "/images/enhanced/furniture-light-storage-800.webp",
+          "width": 800,
+          "height": 534
+        },
+        {
+          "src": "/images/enhanced/furniture-light-storage-1600.webp",
+          "width": 1600,
+          "height": 1068
+        },
+        {
+          "src": "/images/enhanced/furniture-light-storage-3200.webp",
+          "width": 3200,
+          "height": 2136
+        }
+      ]
+    }
+  ]
+}
