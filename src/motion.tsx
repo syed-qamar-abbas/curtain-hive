@@ -1,11 +1,10 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ChevronDown, Plus, X } from 'lucide-react';
-import { media } from './data';
 
 const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
-const INTRO_VERSION = 'premium-v3';
-export const INTRO_DURATION = 1100;
+const INTRO_VERSION = 'wordmark-v4';
+export const INTRO_DURATION = 2600;
 
 /** A single observer per route; content stays visible if motion is unavailable. */
 export function MotionEffects() {
@@ -77,7 +76,7 @@ export function Intro() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     try { setShow(sessionStorage.getItem('ch-intro') !== INTRO_VERSION && !reducedMotion()); }
-    catch { /* Storage is optional. */ }
+    catch { setShow(!reducedMotion()); }
   }, []);
   useEffect(() => {
     if (!show) return;
@@ -89,16 +88,48 @@ export function Intro() {
     // Intentional interaction can dismiss the signature moment immediately.
     window.addEventListener('pointerdown', dismiss, { once: true });
     window.addEventListener('keydown', dismiss, { once: true });
+    window.addEventListener('wheel', dismiss, { once: true, passive: true });
     preference.addEventListener('change', dismiss, { once: true });
     return () => {
       clearTimeout(timer);
       delete document.documentElement.dataset.intro;
       window.removeEventListener('pointerdown', dismiss);
       window.removeEventListener('keydown', dismiss);
+      window.removeEventListener('wheel', dismiss);
       preference.removeEventListener('change', dismiss);
     };
   }, [show]);
-  return show ? <div className="intro-curtain" aria-hidden="true"><div /><div /><span><img src={media.logo} alt="" /><small>Interiors, tailored to you.</small></span></div> : null;
+  return show ? <div className="intro-curtain brand-intro">
+    <div className="intro-panel intro-panel-left" aria-hidden="true" />
+    <div className="intro-panel intro-panel-right" aria-hidden="true" />
+    <div className="intro-signature" aria-hidden="true">
+      <svg className="intro-wordmark" viewBox="0 0 860 190" fill="none" focusable="false">
+        <defs>
+          <clipPath id="intro-wordmark-window"><path d="M0 0h860v190H0z" /></clipPath>
+          <clipPath id="intro-wordmark-letters">
+            <text x="10" y="148">Curtain</text><text x="548" y="148">Hive</text>
+          </clipPath>
+          <linearGradient id="intro-wordmark-light">
+            <stop stopColor="#ead5b3" stopOpacity="0" />
+            <stop offset=".42" stopColor="#ead5b3" stopOpacity=".5" />
+            <stop offset=".55" stopColor="#fffdf6" />
+            <stop offset=".72" stopColor="#ead5b3" stopOpacity=".65" />
+            <stop offset="1" stopColor="#ead5b3" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <g clipPath="url(#intro-wordmark-window)">
+          <g className="intro-word intro-word-first"><text x="10" y="148">Curtain</text></g>
+          <g className="intro-word intro-word-second"><text x="548" y="148">Hive</text></g>
+        </g>
+        <g clipPath="url(#intro-wordmark-letters)">
+          <path className="intro-wordmark-sheen" d="M-260-40h220v270h-220z" fill="url(#intro-wordmark-light)" />
+        </g>
+      </svg>
+      <p>Interiors, tailored to you.</p>
+    </div>
+    <div className="intro-footnote" aria-hidden="true">Made around the way you live.</div>
+    <button className="intro-skip" type="button" onClick={() => setShow(false)} aria-label="Skip intro animation">Skip intro <span aria-hidden="true">↗</span></button>
+  </div> : null;
 }
 
 export function Modal({ children, title, onClose, wide = false }: { children: ReactNode; title: string; onClose: () => void; wide?: boolean }) {

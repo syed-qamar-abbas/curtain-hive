@@ -1,0 +1,152 @@
+/* The requested fabric lighting and wordmark glint are confined to this brief opening. */
+.brand-intro {
+  --intro-fabric: #48121f;
+  --intro-fold: #692235;
+  --intro-shadow: #2b0c16;
+  --intro-ink: #f4ece0;
+  --intro-wordmark: #e4d4bd;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: block;
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--intro-ink);
+  isolation: isolate;
+}
+.brand-intro > .intro-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(50% + 1px);
+  height: 100%;
+  background: var(--intro-fabric);
+  overflow: hidden;
+}
+.intro-panel-left { left: 0; }
+.intro-panel-right { right: 0; }
+/* Static tonal folds; the travelling light and panels only animate transform/opacity. */
+.intro-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg,
+    var(--intro-shadow) 0, var(--intro-fabric) 22%,
+    var(--intro-fold) 39%, var(--intro-fabric) 54%,
+    var(--intro-shadow) 72%, var(--intro-fabric) 100%);
+  background-size: clamp(88px, 12vw, 185px) 100%;
+  opacity: .7;
+}
+.intro-panel-right::before { transform: scaleX(-1); }
+.intro-panel::after {
+  content: '';
+  position: absolute;
+  inset: -20% -50%;
+  background: linear-gradient(110deg, transparent 36%, #f2dcc511 48%, transparent 61%);
+  opacity: 0;
+  transform: translateX(-35%);
+}
+.brand-intro > .intro-signature {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(1000px, 88vw);
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.intro-wordmark { display: block; width: 100%; height: auto; overflow: visible; }
+.intro-wordmark text {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  letter-spacing: -8px;
+}
+.intro-word { fill: var(--intro-wordmark); }
+.intro-signature p {
+  margin: 10px 0 0;
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.5;
+  color: var(--intro-ink);
+}
+.brand-intro > .intro-footnote {
+  position: absolute;
+  left: clamp(24px, 4.4vw, 64px);
+  bottom: max(32px, env(safe-area-inset-bottom));
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d6bfc1;
+}
+.intro-skip {
+  position: absolute;
+  right: clamp(24px, 4.4vw, 64px);
+  bottom: max(24px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 44px;
+  padding: 8px 0 8px 16px;
+  border: 0;
+  background: none;
+  color: var(--intro-ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.intro-skip span { font-size: 20px; }
+.intro-skip:focus-visible { outline: 2px solid var(--intro-ink); outline-offset: 5px; }
+@media (prefers-reduced-motion: no-preference) {
+  .intro-panel-left { animation: intro-open-left 800ms 1750ms var(--motion-travel) both; }
+  .intro-panel-right { animation: intro-open-right 800ms 1750ms var(--motion-travel) both; }
+  .intro-panel::after { animation: intro-fabric-light 1600ms 150ms ease-in-out both; }
+  .intro-word { animation: intro-word-rise 780ms var(--motion-ease) both; }
+  .intro-word-first { animation-delay: 80ms; }
+  .intro-word-second { animation-delay: 230ms; }
+  .intro-wordmark-sheen { animation: intro-light-pass 1150ms 650ms linear both; }
+  .intro-signature p { animation: intro-tagline 700ms 400ms var(--motion-ease) both; }
+  .intro-signature { animation: intro-signature-leave 420ms 1700ms ease both; }
+  .intro-footnote, .intro-skip { animation: intro-details 2100ms ease both; }
+}
+@keyframes intro-word-rise {
+  from { opacity: 0; transform: translateY(150px) rotate(3deg); }
+  to { opacity: 1; transform: translateY(0) rotate(0); }
+}
+@keyframes intro-tagline {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes intro-light-pass {
+  0% { opacity: 0; transform: translateX(0) skewX(-18deg); }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(1400px) skewX(-18deg); }
+}
+@keyframes intro-fabric-light {
+  0% { opacity: 0; transform: translateX(-35%); }
+  40%, 60% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(35%); }
+}
+@keyframes intro-signature-leave {
+  to { opacity: 0; transform: translate(-50%, -55%) scale(.98); }
+}
+@keyframes intro-open-left { to { transform: translateX(-100%); } }
+@keyframes intro-open-right { to { transform: translateX(100%); } }
+@keyframes intro-details {
+  0% { opacity: 0; }
+  25%, 78% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (max-width: 600px) {
+  .brand-intro > .intro-signature { width: 90vw; }
+  .intro-signature p { margin-top: 16px; font-size: 14px; }
+  .brand-intro > .intro-footnote { left: 24px; max-width: 165px; font-size: 12px; }
+  .intro-skip { right: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro { display: none; }
+}

@@ -4,7 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const page = await browser.newPage();
-await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'premium-v3'));
+await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'wordmark-v4'));
 const errors = [];
 page.on('pageerror', error => errors.push(error.message));
 const results = [];

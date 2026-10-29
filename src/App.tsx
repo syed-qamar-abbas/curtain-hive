@@ -11,6 +11,7 @@ import './hero-navbar.css';
 import './insights.css';
 import './gallery.css';
 import './contact.css';
+import './intro.css';
 import {gallery, galleryCategories, galleryService, type GalleryItem} from './gallery';
 import { InsightsIndex, InsightArticle, ServiceInsightLink } from './Insights';
 import { applyPageMetadata } from './seo';

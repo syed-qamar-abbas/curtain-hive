@@ -4,7 +4,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 mkdirSync('research/motion-qa', { recursive: true });
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'premium-v3'));
+await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'wordmark-v4'));
 await page.goto('http://127.0.0.1:5173/');
 await page.addStyleTag({ content: 'html { scroll-behavior: auto !important; }' });
 const picture = page.locator('.studio-visual');

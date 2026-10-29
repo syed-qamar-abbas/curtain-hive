@@ -2,7 +2,7 @@ import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const page = await browser.newPage();
-await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'premium-v3'));
+await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'wordmark-v4'));
 mkdirSync('research/navbar-fixes', { recursive: true });
 await page.setViewportSize({ width: 1440, height: 900 });
 await page.goto('http://127.0.0.1:5173/portfolio/');

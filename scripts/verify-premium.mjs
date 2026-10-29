@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdirSync, writeFileSync } from 'node:fs';
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
-await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'premium-v3'));
+await page.addInitScript(() => sessionStorage.setItem('ch-intro', 'wordmark-v4'));
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 const base = 'http://127.0.0.1:5173';
